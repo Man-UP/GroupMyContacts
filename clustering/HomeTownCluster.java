@@ -32,11 +32,14 @@ public class HomeTownCluster {
 
 			String name = c.get("Hometown.name");
 			String id = c.get("Hometown.id");
-			
 			if(name!=null){
-				String lonlat = FB.getLonLat(id);			
-				String[] lonlat_a = lonlat.split("|");
-				LON_LAT[i] = new String[]{name, lonlat_a[0], lonlat_a[1]};
+				String lonlat = FB.getLonLat(id);
+				if(!lonlat.isEmpty())
+				{
+					String[] splitLonLat = lonlat.split("[|]");
+					LON_LAT[i] = new String[]{name, splitLonLat[0], splitLonLat[1]};
+					i++;
+				}
 			}
 		}
 		
@@ -53,14 +56,16 @@ public class HomeTownCluster {
 	 public static Matrix getDistanceMatrix(String[][] LON_LAT) {
 	        ProximityMatrix matrix = new ProximityMatrix(LON_LAT.length);
 	        for (int i = 0; i < LON_LAT.length; ++i) {
-	            String city1 = LON_LAT[i][0];
+	            //String city1 = LON_LAT[i][0];
 	            //matrix.setLabel(i,city1);
-	            double lonA = toRadians(LON_LAT[i][1],"n");
-	            double latA = toRadians(LON_LAT[i][2],"w");
+	        	System.out.println(LON_LAT[i][1] + LON_LAT[i][2]);
+	            double lonA = toRadians(LON_LAT[i][1],"w");
+	            double latA = toRadians(LON_LAT[i][2],"n");
+	            
 	            for (int j = i+1; j < LON_LAT.length; ++j) {
-	                String city2 = LON_LAT[j][0];
-	                double lonB = toRadians(LON_LAT[j][1],"n");
-	                double latB = toRadians(LON_LAT[j][2],"w");
+	                //String city2 = LON_LAT[j][0];
+	                double lonB = toRadians(LON_LAT[j][1],"w");
+	                double latB = toRadians(LON_LAT[j][2],"n");
 	                double dist = d(lonA,latA,lonB,latB);
 			// System.out.println(city1 + "<==>" + city2 + "=" + dist);
 	                matrix.setValue(i,j,dist);
@@ -84,6 +89,7 @@ public class HomeTownCluster {
 	        String[] nums = frac.split(divider);
 	        double degs = Double.parseDouble(nums[0])
 	            + Double.parseDouble(nums[1])/60.0;
+	        System.out.println(degs);
 	        return Math.toRadians(degs);
 	    }
 }

@@ -26,7 +26,7 @@ public class FB {
 		AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(app_id,app_secret);
 		
 		client = new DefaultFacebookClient(
-				"AAACEdEose0cBADqmMVZAKJWhV6E7eNRz8yTLeFTu8hKZBsMvtEAuejxZCztDBbotaP0KXZBr1kZCz3bwPJw3kDlUYxg41Yjiy8LOpf8FxZAAZDZD"				 
+				"AAACEdEose0cBAF7vNaUQVegAhZAQZAGLPecpQ16h2N13MNNY9hk9c9aE57baBmBJ1RnWPZCUfmHBSbNvYTHpSLmoJoIkDtuwSCddiOczA4N36Kt0xWd"				 
 				//accessToken.getAccessToken()
 				);		
 	}

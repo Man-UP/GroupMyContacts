@@ -18,10 +18,10 @@ public class Main {
 		
 		Set<Contact> friends = FB.getFriends("");
 		
-		BirthMonthCluster.print_clusters(friends);
+		//BirthMonthCluster.print_clusters(friends);
 		
-		//HomeTownCluster htc = new HomeTownCluster();		
-		//htc.cluster(friends);
+		HomeTownCluster htc = new HomeTownCluster();		
+		htc.cluster(friends);
 
 		
 		

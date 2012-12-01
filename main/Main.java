@@ -3,6 +3,7 @@ package main;
 import java.util.Set;
 
 import models.Contact;
+import clustering.BirthMonthCluster;
 import clustering.HomeTownCluster;
 import datasource.FB;
 
@@ -17,14 +18,11 @@ public class Main {
 		
 		Set<Contact> friends = FB.getFriends("");
 		
-		HomeTownCluster htc = new HomeTownCluster();
+		BirthMonthCluster.print_clusters(friends);
 		
-		htc.cluster(friends);
-		
-		
-		// create clustering object
-		
-		// do clustering
+		//HomeTownCluster htc = new HomeTownCluster();		
+		//htc.cluster(friends);
+
 		
 		
 	}

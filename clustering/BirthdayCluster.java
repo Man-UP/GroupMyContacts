@@ -8,6 +8,14 @@ import com.aliasi.cluster.CompleteLinkClusterer;
 import com.aliasi.cluster.HierarchicalClusterer;
 import com.aliasi.util.Distance;
 
+/*
+ * Not Done Yet
+ * 
+ * The idea is to replace bm_distance below so that it works out the distance in the
+ * calendar year (i.e. num of days into year modulo 365)
+ * 
+ */
+
 public class BirthdayCluster {
 
 	static public void print_clusters(Set<Contact> friends){

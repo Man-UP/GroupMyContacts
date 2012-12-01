@@ -26,14 +26,20 @@ public class FB {
 		AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(app_id,app_secret);
 		
 		client = new DefaultFacebookClient(
-				"AAACEdEose0cBAGOtoKWlC6qyrogcRS6Qs6dUQlnZAfZAky6HlPG3Jl75GNljMUXgJMX9X2snPo9F68EI5MZB0JMyecV4VZA0Yacred7CgwZDZD"				 
+				"AAACEdEose0cBADqmMVZAKJWhV6E7eNRz8yTLeFTu8hKZBsMvtEAuejxZCztDBbotaP0KXZBr1kZCz3bwPJw3kDlUYxg41Yjiy8LOpf8FxZAAZDZD"				 
 				//accessToken.getAccessToken()
 				);		
 	}
 	
+	/*
+	 * Get the friends of a person using a person id
+	 */
+	
 	static public Set<Contact> getFriends(String person_id){
 		
 		String query = "me/friends";
+		
+		// These are the fields of the friends that we ask for
 		String fields = "birthday,name,hometown";//"birthday,name,about,bio,gender,quotes,address,hometown,interested_in,religion,sports,relationship_status";
 		
 		//fields+=",likes";
@@ -53,17 +59,29 @@ public class FB {
 		return contacts;
 	}
 
-	public static String getLatLong(String location_id) {
+	/*
+	 * Get longitude and latitude from a Facebook Place using a location id
+	 * 
+	 */
+	
+	public static String getLonLat(String location_id) {
 		
 		Place place = client.fetchObject(location_id,Place.class);
 		
 		Double lat = place.getLocation().getLatitude();
 		Double lon = place.getLocation().getLongitude();
+		try{
+		String lat_s = (lat.toString()+"00").replace('.', 'n').substring(0,4);
+		String lon_s = (lon.toString()+"00").replace('.', 'w').substring(0,4);
 		
-		String lat_s = lat.toString().replace('.', 'n').substring(0,4);
-		String lon_s = lon.toString().replace('.', 'w').substring(0,4);
 		
-		return null;
+		return lon_s+"|"+lat_s;
+		}
+		catch(Exception e){
+			System.out.println(lat+"   "+lon);
+		}
+		return "";
+		
 		
 	}
 	

@@ -21,14 +21,24 @@ public class Contact extends HashMap<String,String> {
 		
 		Contact this_contact = new Contact();
 		
+		// Find all methods in User that are of the form getX
 		for(Method m :User.class.getMethods()){
 			String n = m.getName();
 			if(n.contains("get") && !n.contains("getClass")){
 				String field = n.substring(3);
 				try {
+					// try and call the found method
 					Object ret_value = m.invoke(user);
+					
+					// if the return value is not null (or empty) then we will add it
+					
 					if(ret_value!=null && !ret_value.toString().equals("[]")){
 						//System.out.println("adding "+field+" : "+ret_value);
+						
+						// the return value might be a composite type i.e
+						// name=X, id=Y
+						// in this case we add both the name and id (important for Places)
+						
 						if(ret_value instanceof NamedFacebookType){
 							String name = ((NamedFacebookType) ret_value).getName();
 							String id = ((NamedFacebookType) ret_value).getId();
@@ -36,6 +46,9 @@ public class Contact extends HashMap<String,String> {
 							this_contact.put(field+".id",id);
 						}
 						else{
+						
+						// Otherwise we just add the field name and value	
+							
 							String value = ret_value.toString();
 							this_contact.put(field,value);
 						}
@@ -59,6 +72,11 @@ public class Contact extends HashMap<String,String> {
 		return this_contact;
 	}
 
+	/**
+	 * This bag of words methods creates a multiset of words used in the values
+	 * of the contact
+	 * @return
+	 */
 
 	public Map<String,Integer> bag_of_words(){
 		

@@ -9,6 +9,12 @@ import models.Contact;
 import com.aliasi.spell.EditDistance;
 import com.aliasi.util.Distance;
 
+/*
+ * This currently doesn't do anything useful - the idea was to use the bag of words
+ * approach to build a multiset of words used in a Contact and then use a distance
+ * metric on word-multisets to do clustering... this distance metric needs fixing
+ */
+
 public class WordDistance implements Distance<Contact> {
 
 	@Override

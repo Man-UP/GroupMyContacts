@@ -11,7 +11,9 @@ public class Main {
 	
 	public static void main(String[] args){
 		
-		// create FB object
+		/*
+		 * FB contains all the logic for talking to Facebook
+		 */
 		
 		Set<Contact> friends = FB.getFriends("");
 		

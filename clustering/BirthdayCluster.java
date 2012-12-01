@@ -37,6 +37,27 @@ public class BirthdayCluster {
 	static public Set<Set<Contact>> cluster(Set<Contact> contacts){
 		
 		Distance<Contact> bm_distance = new Distance<Contact>(){
+			
+			
+			private int days_in_month(int month){
+				
+				switch(mont){
+					case 1 : return 31;
+					case 2 : return 28;
+					case 3 : return 31;
+					case 4 : return 30;
+					case 5 : return 31;
+					case 6 : return 30;
+					case 7 : return 31;
+					case 8 : return 31;
+					case 9 : return 30;
+					case 10 : return 31;
+					case 11 : return 30;
+					case 12 : return 31;
+					default : return 0;
+				}
+			}
+			
 			@Override
 			public double distance(Contact c0, Contact c1) {
 
@@ -46,15 +67,20 @@ public class BirthdayCluster {
 				if(bm0==null) bm0 = "none";
 				if(bm1==null) bm1 = "none";
 				
-				String c0bm = bm0.substring(0,2);
-				String c1bm = bm1.substring(0,2);
+				int c0bm = Integer.parseInt(bm0.substring(0,2));
+				int c1bm = Integer.parseInt(bm1.substring(0,2));
+				int c0bd = Integer.parseInt(bm0.substring(2,4));
+				int c1bd = Integer.parseInt(bm1.substring(2,4));
 				
-				int eq = c0bm.equals(c1bm) ? 0 : 10;
+				String c0dayinyear = days_in_month(c0bm) + c0bd;
+				String c1dayinyear = days_in_month(c1bm) + c1bd;
+				
+				int dis = Math.abs(c0dayinyear - c1dayinyear);
 				
 				//System.out.println(c0bm+" with "+c1bm+" is "+eq);
 
 				
-				return eq;
+				return dis;
 			}
 			
 		};

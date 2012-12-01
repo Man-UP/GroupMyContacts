@@ -1,8 +1,11 @@
 package datasource;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import models.Contact;
+import clustering.WordDistance;
 
 import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
@@ -23,43 +26,32 @@ public class FB {
 		AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(app_id,app_secret);
 		
 		client = new DefaultFacebookClient(
-				"AAACEdEose0cBAEooXM2HxKOMaulyPyYEc7qQ8pbOt9aAQqiBTZBRfZBpY8leOodfKRUgGH6XUtkBXNDfEaYQy8KQyzPe9ZBrMRdRgstKAZDZD"				 
+				"AAACEdEose0cBAGlENsuLLJmaTf9e8Ce5v4YbUlsYXsctyLQeAszydtccqQdvSyRJy7zYSC5fvRPQTNZBFueZAzZBDTgqBZBPs2pueUEdfwZDZD"				 
 				//accessToken.getAccessToken()
 				);		
 	}
 	
-	public List<Contact> getFriends(String person_id){
+	public Set<Contact> getFriends(String person_id){
 		
 		String query = "me/friends";
+		String fields = "birthday,name,hometown";//"birthday,name,about,bio,gender,quotes,address,hometown,interested_in,religion,sports,relationship_status";
 		
-		Connection<User> myFriends = client.fetchConnection(query, User.class,Parameter.with("fields", "birthday,bio,name,about"));
+		//fields+=",likes";
+		
+		Connection<User> myFriends = client.fetchConnection(query, User.class,Parameter.with("fields", fields));
 
 		List<User> friends = myFriends.getData();
-		
-		System.out.println(friends.size()+" friends");
-		
-		int about = 0;
-		int bio = 0;
-		int birthday = 0;
+		Set<Contact> contacts = new HashSet<Contact>();
 		
 		for(User user: friends){
-			System.out.println(user.getName());
+			//System.out.println(user.getName());
 			
 			Contact c = Contact.createContact(user);
-			
-			System.out.println(c);
-			
-			if(user.getAbout()!=null) about++;
-			if(user.getBio()!=null) bio++;
-			if(user.getBirthday()!=null) birthday++;
-			
+			contacts.add(c);			
 		}
 		
-		System.out.println(about);
-		System.out.println(bio);
-		System.out.println(birthday);
-		
-		return null;
+		return contacts;
 	}
+	
 	
 }

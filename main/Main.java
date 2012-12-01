@@ -1,5 +1,10 @@
 package main;
 
+import java.util.Set;
+
+import clustering.BirthMonthCluster;
+
+import models.Contact;
 import datasource.FB;
 
 public class Main {
@@ -10,10 +15,13 @@ public class Main {
 		// create FB object
 		
 		FB fb = new FB();
+		Set<Contact> friends = fb.getFriends("");
 		
-		// ask for friends
+		for(Contact friend : friends){
+			if(friend.get("Hometown")!=null)
+				System.out.println(friend.get("Hometown"));
+		}
 		
-		fb.getFriends("");
 		
 		// create clustering object
 		

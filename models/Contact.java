@@ -22,20 +22,21 @@ public class Contact extends HashMap<String,String> {
 		Contact this_contact = new Contact();
 		
 		for(Method m :User.class.getMethods()){
-			String name = m.getName();
-			if(name.contains("get") && !name.contains("getClass")){
-				String field = name.substring(3);
-				String value = "";
+			String n = m.getName();
+			if(n.contains("get") && !n.contains("getClass")){
+				String field = n.substring(3);
 				try {
 					Object ret_value = m.invoke(user);
 					if(ret_value!=null && !ret_value.toString().equals("[]")){
 						//System.out.println("adding "+field+" : "+ret_value);
 						if(ret_value instanceof NamedFacebookType){
-							value = ((NamedFacebookType) ret_value).getName();
-							this_contact.put(field,value);
+							String name = ((NamedFacebookType) ret_value).getName();
+							String id = ((NamedFacebookType) ret_value).getId();
+							this_contact.put(field+".name",name);
+							this_contact.put(field+".id",id);
 						}
 						else{
-							value = ret_value.toString();
+							String value = ret_value.toString();
 							this_contact.put(field,value);
 						}
 					}

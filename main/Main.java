@@ -2,9 +2,8 @@ package main;
 
 import java.util.Set;
 
-import clustering.BirthMonthCluster;
-
 import models.Contact;
+import clustering.HomeTownCluster;
 import datasource.FB;
 
 public class Main {
@@ -14,13 +13,11 @@ public class Main {
 		
 		// create FB object
 		
-		FB fb = new FB();
-		Set<Contact> friends = fb.getFriends("");
+		Set<Contact> friends = FB.getFriends("");
 		
-		for(Contact friend : friends){
-			if(friend.get("Hometown")!=null)
-				System.out.println(friend.get("Hometown"));
-		}
+		HomeTownCluster htc = new HomeTownCluster();
+		
+		htc.cluster(friends);
 		
 		
 		// create clustering object

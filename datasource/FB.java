@@ -5,33 +5,33 @@ import java.util.List;
 import java.util.Set;
 
 import models.Contact;
-import clustering.WordDistance;
 
 import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.FacebookClient.AccessToken;
 import com.restfb.Parameter;
+import com.restfb.types.Place;
 import com.restfb.types.User;
 
 public class FB {
 
-	private final String app_id = "212113275590062";
-	private final String app_secret = "c46e82a7fd92912a713963dc8c71d310";
+	private static final String app_id = "212113275590062";
+	private static final String app_secret = "c46e82a7fd92912a713963dc8c71d310";
 	
-	private final FacebookClient client;
+	private static final FacebookClient client;
 	
-	public FB(){
+	static{
 		
 		AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(app_id,app_secret);
 		
 		client = new DefaultFacebookClient(
-				"AAACEdEose0cBAGlENsuLLJmaTf9e8Ce5v4YbUlsYXsctyLQeAszydtccqQdvSyRJy7zYSC5fvRPQTNZBFueZAzZBDTgqBZBPs2pueUEdfwZDZD"				 
+				"AAACEdEose0cBAGOtoKWlC6qyrogcRS6Qs6dUQlnZAfZAky6HlPG3Jl75GNljMUXgJMX9X2snPo9F68EI5MZB0JMyecV4VZA0Yacred7CgwZDZD"				 
 				//accessToken.getAccessToken()
 				);		
 	}
 	
-	public Set<Contact> getFriends(String person_id){
+	static public Set<Contact> getFriends(String person_id){
 		
 		String query = "me/friends";
 		String fields = "birthday,name,hometown";//"birthday,name,about,bio,gender,quotes,address,hometown,interested_in,religion,sports,relationship_status";
@@ -51,6 +51,20 @@ public class FB {
 		}
 		
 		return contacts;
+	}
+
+	public static String getLatLong(String location_id) {
+		
+		Place place = client.fetchObject(location_id,Place.class);
+		
+		Double lat = place.getLocation().getLatitude();
+		Double lon = place.getLocation().getLongitude();
+		
+		String lat_s = lat.toString().replace('.', 'n').substring(0,4);
+		String lon_s = lon.toString().replace('.', 'w').substring(0,4);
+		
+		return null;
+		
 	}
 	
 	

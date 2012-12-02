@@ -5,6 +5,7 @@ import java.util.Set;
 import models.Contact;
 import clustering.BirthMonthCluster;
 import clustering.BirthdayCluster;
+import clustering.Clustering;
 import clustering.HomeTownCluster;
 import datasource.FB;
 
@@ -15,6 +16,10 @@ public class Main {
 		
 		/*
 		 * We're expecting an access taken as args[0]
+		 * and the clustering method as args[1]
+		 * - 1 is HomeTownCluster
+		 * - 2 is BirthMonthCluster
+		 * - 3 is BirthdayCluster
 		 */
 		
 		try{
@@ -26,20 +31,28 @@ public class Main {
 			System.exit(1);
 		}
 		
-		/*
-		 * FB contains all the logic for talking to Facebook
-		 */
-		
 		Set<Contact> friends = FB.getFriends("");
 		
-		//BirthMonthCluster.print_clusters(friends);
+		Clustering clusterer = null;
 		
-		//HomeTownCluster htc = new HomeTownCluster();		
-		//htc.print_clusters(friends);
-		
-		BirthdayCluster.print_clusters(friends);
+		try{
+			switch(Integer.parseInt(args[1])){
+			case 1 : clusterer = new HomeTownCluster(); break;
+			case 2 : clusterer = new BirthMonthCluster(); break;
+			case 3 : clusterer = new BirthdayCluster(); break;
+			default : throw new RuntimeException("You didn't give an existing clusterer option");
+			}
+		}
+		catch(IndexOutOfBoundsException e){
+			System.err.println("Clusterer not given");
+			System.exit(1);
+		}
+		catch(NumberFormatException e){
+			System.err.println("Clusterer needs to be given as a number");
+			System.exit(1);			
+		}
 
-		
+		clusterer.print_clusters(friends);
 		
 	}
 	

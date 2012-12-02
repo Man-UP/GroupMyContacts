@@ -8,6 +8,7 @@ import models.Contact;
 import output.Cluster;
 
 import com.aliasi.cluster.CompleteLinkClusterer;
+import com.aliasi.cluster.Dendrogram;
 import com.aliasi.cluster.HierarchicalClusterer;
 import com.aliasi.matrix.Matrix;
 import com.aliasi.matrix.ProximityMatrix;
@@ -18,31 +19,48 @@ import datasource.FB;
  * Cluster using HomeTown
  */
 
-public class HomeTownCluster {
+public class HomeTownCluster extends Clustering {
  
 	static double EARTH_RADIUS_MILES = 3963.1;
 	
 
-	static public void print_clusters(Set<Contact> friends){
+
+	
+	public Set<Cluster> cluster(Set<Contact> contacts){
 		
-		Set<Cluster> friend_months = HomeTownCluster.cluster(friends);
 		
-		System.out.println(friend_months.size()+" clusters");
+		Distance<Contact> ht_distance = getDistance(contacts);		
+
+        HierarchicalClusterer<Contact> clusterer 
+        = new CompleteLinkClusterer<Contact>(1,ht_distance);
 		
-		for(Cluster cluster : friend_months){
-			System.out.println("=============================================");
-			System.out.println(cluster.name);
-			System.out.println("=============================================");
-			for(Contact friend : cluster.nodes){
-				System.out.println(friend);
-			}
-		}		
-		
+       
+        Set<Set<Contact>> raw_clusters = clusterer.cluster(contacts);
+        
+        Set<Cluster> clusters = new HashSet<Cluster>();
+        
+        for(Set<Contact> set : raw_clusters){
+        	String label = "near "+(set.iterator().next().get("Hometown.name"));
+        	clusters.add(new Cluster(set,label));
+        }
+        
+        return clusters;
+
 	}	
 	
-	static public Set<Cluster> cluster(Set<Contact> contacts){
+	@Override
+	public Dendrogram<Contact> cluster_for_d(Set<Contact> contacts) {
 		
+		Distance<Contact> ht_distance = getDistance(contacts);		
 		
+		HierarchicalClusterer<Contact> clusterer 
+        = new CompleteLinkClusterer<Contact>(1,ht_distance);		
+		
+		return clusterer.hierarchicalCluster(contacts);
+	}	
+
+
+	private Distance<Contact> getDistance(Set<Contact> contacts) {
 		String[][] LON_LAT = new String[contacts.size()][];
 		
 		int i = 0;
@@ -86,30 +104,15 @@ public class HomeTownCluster {
 				return distances.value(c0_i, c1_i);
 			}
 			
-		};		
-
-        HierarchicalClusterer<Contact> clusterer 
-        = new CompleteLinkClusterer<Contact>(1,ht_distance);
-		
-       
-        Set<Set<Contact>> raw_clusters = clusterer.cluster(contacts);
-        
-        Set<Cluster> clusters = new HashSet<Cluster>();
-        
-        for(Set<Contact> set : raw_clusters){
-        	String label = "near "+(set.iterator().next().get("Hometown.name"));
-        	clusters.add(new Cluster(set,label));
-        }
-        
-        return clusters;
-
-	}	
+		};
+		return ht_distance;
+	}
+	
 	/*
-	 * The below has been copied from 
+	 * This has been copied from 
 	 * http://ir.exp.sis.pitt.edu/ne/lingpipe-2.4.0/demos/tutorial/cluster/src/CityDistances.java
 	 * 
 	 */
-	
 	 public static Matrix getDistanceMatrix(String[][] LON_LAT,HashMap<String,Integer> nameMap) {
 	        ProximityMatrix matrix = new ProximityMatrix(LON_LAT.length);
 	        for (int i = 0; i < LON_LAT.length; ++i) {
@@ -147,5 +150,6 @@ public class HomeTownCluster {
 	                         ( Math.sin(latA) 
 	                           * Math.sin(latB) ) ) );
 	    }
+
 
 }

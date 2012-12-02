@@ -62,8 +62,8 @@ public class Main {
 		try{
 			
 			switch(Integer.parseInt(args[2])){
-			case 1 : clusterer.print_clusters(friends);
-			case 2 : System.out.println(ClustersToGEXF.make(clusterer.cluster(friends)));
+			case 1 : clusterer.print_clusters(friends); break;
+			case 2 : System.out.println(ClustersToGEXF.make(clusterer.cluster(friends))); break;
 			default : throw new RuntimeException("You didn't give an output option");
 			}
 			

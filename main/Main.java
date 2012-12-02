@@ -21,7 +21,7 @@ public class Main {
 		//BirthMonthCluster.print_clusters(friends);
 		
 		HomeTownCluster htc = new HomeTownCluster();		
-		htc.cluster(friends);
+		htc.print_clusters(friends);
 
 		
 		

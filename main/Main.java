@@ -3,6 +3,8 @@ package main;
 import java.util.Set;
 
 import models.Contact;
+import output.Cluster;
+import output.ClustersToGEXF;
 import clustering.BirthMonthCluster;
 import clustering.BirthdayCluster;
 import clustering.Clustering;
@@ -52,7 +54,13 @@ public class Main {
 			System.exit(1);			
 		}
 
-		clusterer.print_clusters(friends);
+		//clusterer.print_clusters(friends);
+		
+		Set<Cluster> clusters = clusterer.cluster(friends);
+		
+		String output = ClustersToGEXF.make(clusters);
+		
+		System.out.println(output);
 		
 	}
 	

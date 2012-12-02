@@ -1,8 +1,14 @@
 package output;
 
-import com.aliasi.cluster.Dendrogram;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
-public class ClusterDataToGEXF {
+import com.aliasi.cluster.Dendrogram;
+import com.aliasi.util.Pair;
+
+public class DendrogramToGEXF {
 
 	public static String make(Dendrogram D){
 		
@@ -10,6 +16,10 @@ public class ClusterDataToGEXF {
 		 * compute the parameters required
 		 */
 		int num_nodes = 0;
+		
+		Map<String,Integer> node_id_map = new HashMap<String,Integer>();
+		Set<Pair<Integer,Integer>> edge_set = new HashSet<Pair<Integer,Integer>>();
+		
 		
 		/*
 		 * make output string
@@ -26,5 +36,11 @@ public class ClusterDataToGEXF {
 		
 	}
 	
+	
+	private static void trace(Dendrogram D, Map<String,Integer> node_id_map, Set<Pair<Integer,Integer>> edge_set){
+		
+		
+		
+	}
 	
 }

@@ -4,7 +4,7 @@ import java.util.Set;
 
 import models.Contact;
 
-public class ClusterDataToJSON {
+public class DendrogramToJSON {
 
 	public static String make(Set<Cluster> data){
 		

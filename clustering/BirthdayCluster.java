@@ -28,7 +28,7 @@ public class BirthdayCluster  extends Clustering {
 		Distance<Contact> bm_distance = getDistance();
 		
         HierarchicalClusterer<Contact> clusterer 
-        = new CompleteLinkClusterer<Contact>(0,bm_distance);
+        = new CompleteLinkClusterer<Contact>(10,bm_distance);
 		
         Set<Contact> rem = new HashSet<Contact>();
         for(Contact c : contacts){
@@ -45,6 +45,9 @@ public class BirthdayCluster  extends Clustering {
         	int total = 0;
         	for(Contact c : set){
         		total += day_of_year(c.get("Birthday"));
+        		
+        		int doy = day_of_year(c.get("Birthday"));        		
+        		System.out.println(c.get("Birthday")+ "  ->  "+doy);
         	}
         	total /= set.size();
         	
@@ -83,8 +86,11 @@ public class BirthdayCluster  extends Clustering {
 				String bm0 = c0.get("Birthday");
 				String bm1 = c1.get("Birthday");
 				
+				int d0 = day_of_year(bm0);
+				int d1 = day_of_year(bm1);
 				
-				int dis = Math.abs(day_of_year(bm0) - day_of_year(bm1));
+				
+				int dis = (d0>d1) ? (d0-d1) : (d1-d0);
 				if(dis > 182.5) dis = 365-dis;
 				
 				//System.out.println(c0bm+" with "+c1bm+" is "+eq);
@@ -101,24 +107,24 @@ public class BirthdayCluster  extends Clustering {
 		
 		for(int i=1;i<13;i++){
 			int now = days_in_month(i);
-			if(total-now < 0){
+			if(total < now){
 				switch(i){
-				case 1 : return "January "+i; 
-				case 2 : return "February "+i; 
-				case 3 : return "March "+i; 
-				case 4 : return "April "+i; 
-				case 5 : return "May "+i; 
-				case 6 : return "June "+i; 
-				case 7 : return "July "+i; 
-				case 8 : return "August "+i; 
-				case 9 : return "September "+i; 
-				case 10 : return "October "+i; 
-				case 11 : return "November "+i; 
-				case 12 : return "December "+i; 
+				case 1 : return "January "+total; 
+				case 2 : return "February "+total; 
+				case 3 : return "March "+total; 
+				case 4 : return "April "+total; 
+				case 5 : return "May "+total; 
+				case 6 : return "June "+total; 
+				case 7 : return "July "+total; 
+				case 8 : return "August "+total; 
+				case 9 : return "September "+total; 
+				case 10 : return "October "+total; 
+				case 11 : return "November "+total; 
+				case 12 : return "December "+total; 
 				}
 			}
 			else{
-				total -= now;
+				total = total - now;
 			}
 		}
 		

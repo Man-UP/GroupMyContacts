@@ -38,18 +38,18 @@ public class ClustersToGEXF {
 		
 		String output = "";
 		
-		output += "<gexf version=\"1.1\">\n";
+		output += "<gexf version=\'1.1\'>\n";
 		output +="<meta><creator>GroupMYContacts</creator></meta>\n";
-		output += "<graph defaultedgetype=\"directed\" idtype=\"string\" type=\"static\">\n";
-		output += "<nodes count=\""+nodes.size()+"\">\n";
+		output += "<graph defaultedgetype=\'directed\' idtype=\'string\' type=\'static\'>\n";
+		output += "<nodes count=\'"+nodes.size()+"\'>\n";
 		for(Pair<Integer,String> p : nodes){
-			output += "<node id=\""+p.a()+".0\" label=\""+p.b()+"\"/>\n";
+			output += "<node id=\'"+p.a()+".0\' label=\'"+p.b()+"\'/>\n";
 		}
 		output += "</nodes>\n";
-		output += "<edges count=\""+edges.size()+"\">\n";
+		output += "<edges count=\'"+edges.size()+"\'>\n";
 		int i=0;
 		for(Pair<Integer,Integer> p : edges){
-			output += "<edge id=\""+i+".0\" source=\""+p.a()+"\" target\""+p.b()+"\"/>\n";
+			output += "<edge id=\'"+i+".0\' source=\'"+p.a()+"\' target=\'"+p.b()+"\'/>\n";
 			i++;
 		}
 		output += "</edges>\n";		

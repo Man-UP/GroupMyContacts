@@ -1,0 +1,347 @@
+<gexf version="1.1">
+<meta><creator>GroupMYContacts</creator></meta>
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="218">
+<node id="22.0" label="average of June 6"/>
+<node id="170.0" label="Ashley Jennings"/>
+<node id="79.0" label="Marcus Stif"/>
+<node id="136.0" label="Sam Burgess"/>
+<node id="131.0" label="Ed Bell"/>
+<node id="174.0" label="Danny Cameron"/>
+<node id="155.0" label="average of July 7"/>
+<node id="143.0" label="average of December 12"/>
+<node id="201.0" label="average of February 2"/>
+<node id="48.0" label="average of September 9"/>
+<node id="113.0" label="average of May 5"/>
+<node id="32.0" label="Josh Wiggett"/>
+<node id="76.0" label="average of October 10"/>
+<node id="19.0" label="Angus Darrah"/>
+<node id="175.0" label="average of January 1"/>
+<node id="217.0" label="Kellie Browne"/>
+<node id="88.0" label="Jonathan Richardson"/>
+<node id="192.0" label="Suzi Clark"/>
+<node id="18.0" label="Chris Gould Banditude"/>
+<node id="6.0" label="average of June 6"/>
+<node id="134.0" label="Drew Syrett"/>
+<node id="108.0" label="average of June 6"/>
+<node id="81.0" label="Steve Hughes"/>
+<node id="71.0" label="average of December 12"/>
+<node id="95.0" label="average of July 7"/>
+<node id="43.0" label="George Taylor"/>
+<node id="21.0" label="John Wightman"/>
+<node id="30.0" label="average of August 8"/>
+<node id="126.0" label="Ruth Herbert"/>
+<node id="166.0" label="India Cox"/>
+<node id="1.0" label="Chris Blundell"/>
+<node id="55.0" label="average of December 12"/>
+<node id="145.0" label="Harriet Hicks"/>
+<node id="118.0" label="Callum Fredric-James McKenzie"/>
+<node id="202.0" label="Maxwell J Jones"/>
+<node id="105.0" label="Abi Tedder"/>
+<node id="46.0" label="average of September 9"/>
+<node id="197.0" label="average of November 11"/>
+<node id="216.0" label="average of November 11"/>
+<node id="137.0" label="average of August 8"/>
+<node id="135.0" label="average of January 1"/>
+<node id="16.0" label="Tadas Baltrušaitis"/>
+<node id="2.0" label="average of September 9"/>
+<node id="3.0" label="Elisabeth Rickard"/>
+<node id="25.0" label="Steph Richardson"/>
+<node id="38.0" label="average of January 1"/>
+<node id="156.0" label="Matthew Milky Jennings"/>
+<node id="31.0" label="Brian Wessel"/>
+<node id="120.0" label="Raymon White"/>
+<node id="10.0" label="average of December 12"/>
+<node id="58.0" label="Kirsty Horne"/>
+<node id="53.0" label="Emily Rose Taylor"/>
+<node id="186.0" label="average of September 9"/>
+<node id="144.0" label="Holly Reger"/>
+<node id="129.0" label="average of September 9"/>
+<node id="64.0" label="average of March 3"/>
+<node id="147.0" label="Fahim Sachedina"/>
+<node id="103.0" label="average of August 8"/>
+<node id="73.0" label="average of July 7"/>
+<node id="13.0" label="average of April 4"/>
+<node id="130.0" label="Rhys Downs"/>
+<node id="5.0" label="Amanda Dobin"/>
+<node id="196.0" label="Matthew Saggy Sadler"/>
+<node id="106.0" label="average of January 1"/>
+<node id="195.0" label="average of January 1"/>
+<node id="125.0" label="average of December 12"/>
+<node id="112.0" label="Robert Burrell Donkin"/>
+<node id="213.0" label="Mel Lindner"/>
+<node id="36.0" label="average of April 4"/>
+<node id="94.0" label="Skele Western"/>
+<node id="215.0" label="Samuel Albanie"/>
+<node id="104.0" label="Simeon Playford"/>
+<node id="139.0" label="average of April 4"/>
+<node id="86.0" label="Jack Anderson"/>
+<node id="49.0" label="Andy Emerson"/>
+<node id="57.0" label="average of September 9"/>
+<node id="123.0" label="average of May 5"/>
+<node id="198.0" label="Ben Allington"/>
+<node id="0.0" label="average of May 5"/>
+<node id="114.0" label="Amanda LittleSpoon Taylor"/>
+<node id="160.0" label="Andy Ladell"/>
+<node id="85.0" label="David Blake"/>
+<node id="15.0" label="average of January 1"/>
+<node id="78.0" label="average of June 6"/>
+<node id="127.0" label="average of September 9"/>
+<node id="44.0" label="average of March 3"/>
+<node id="209.0" label="Harry Darrah"/>
+<node id="102.0" label="Amber Gardiner"/>
+<node id="50.0" label="average of January 1"/>
+<node id="133.0" label="Robert Anderson"/>
+<node id="66.0" label="Jo Maycock"/>
+<node id="141.0" label="average of June 6"/>
+<node id="140.0" label="Ryan Blackburn"/>
+<node id="37.0" label="Eliza Reger"/>
+<node id="72.0" label="Meg Stephens"/>
+<node id="164.0" label="James George-Kelso"/>
+<node id="188.0" label="Emma Whipday"/>
+<node id="152.0" label="Luke Barbanneau"/>
+<node id="42.0" label="average of December 12"/>
+<node id="69.0" label="average of April 4"/>
+<node id="28.0" label="average of March 3"/>
+<node id="189.0" label="average of December 12"/>
+<node id="177.0" label="Flo Taylor"/>
+<node id="212.0" label="average of October 10"/>
+<node id="199.0" label="average of May 5"/>
+<node id="62.0" label="average of May 5"/>
+<node id="56.0" label="Ant Punt"/>
+<node id="107.0" label="Sunil Shah"/>
+<node id="191.0" label="average of November 11"/>
+<node id="187.0" label="Thomas Halliday"/>
+<node id="208.0" label="Tom Cuthbert"/>
+<node id="169.0" label="average of December 12"/>
+<node id="75.0" label="Maddie Hickish"/>
+<node id="121.0" label="average of November 11"/>
+<node id="99.0" label="average of December 12"/>
+<node id="124.0" label="Luke Reger"/>
+<node id="83.0" label="Rob Raine"/>
+<node id="185.0" label="Daniela Florescu"/>
+<node id="214.0" label="average of July 7"/>
+<node id="47.0" label="Gareth Ggmu Gruneberg"/>
+<node id="122.0" label="Emma Louise Obank"/>
+<node id="178.0" label="average of February 2"/>
+<node id="193.0" label="average of August 8"/>
+<node id="54.0" label="Yasmin Giles"/>
+<node id="168.0" label="Helen Woodhouse Blake"/>
+<node id="109.0" label="Luke 'Slick' Hughes"/>
+<node id="128.0" label="Lucien Young"/>
+<node id="117.0" label="average of February 2"/>
+<node id="17.0" label="average of February 2"/>
+<node id="52.0" label="average of February 2"/>
+<node id="163.0" label="average of August 8"/>
+<node id="211.0" label="Ben Rickard"/>
+<node id="27.0" label="Andy Stevenson"/>
+<node id="210.0" label="average of March 3"/>
+<node id="84.0" label="average of June 6"/>
+<node id="179.0" label="Ryan Brown"/>
+<node id="82.0" label="average of December 12"/>
+<node id="110.0" label="David Reger"/>
+<node id="9.0" label="Dave Adler"/>
+<node id="183.0" label="Camilla Wigmore"/>
+<node id="172.0" label="Jade Downs"/>
+<node id="24.0" label="average of July 7"/>
+<node id="91.0" label="average of August 8"/>
+<node id="63.0" label="Mark Van Harmelen"/>
+<node id="181.0" label="Adam De Ath"/>
+<node id="92.0" label="Piyarat Manjaiarn"/>
+<node id="100.0" label="Jason Gee"/>
+<node id="67.0" label="average of July 7"/>
+<node id="207.0" label="average of March 3"/>
+<node id="161.0" label="average of January 1"/>
+<node id="34.0" label="Ian Norfolk Albanie"/>
+<node id="40.0" label="average of July 7"/>
+<node id="151.0" label="average of April 4"/>
+<node id="171.0" label="average of May 5"/>
+<node id="4.0" label="average of February 2"/>
+<node id="158.0" label="Edd Burgess"/>
+<node id="96.0" label="Harry Bullivant"/>
+<node id="180.0" label="average of August 8"/>
+<node id="39.0" label="Karena Taylor"/>
+<node id="116.0" label="Stan Hickish"/>
+<node id="14.0" label="Dan Green"/>
+<node id="45.0" label="Geraint Duck"/>
+<node id="80.0" label="average of August 8"/>
+<node id="150.0" label="Gus Booth-Clibborn"/>
+<node id="190.0" label="David Robinson"/>
+<node id="205.0" label="average of February 2"/>
+<node id="26.0" label="Jessica Tomkins"/>
+<node id="200.0" label="Gill Conquest"/>
+<node id="115.0" label="average of January 1"/>
+<node id="154.0" label="Hana Stevenson"/>
+<node id="61.0" label="Rich Stevenson"/>
+<node id="173.0" label="average of March 3"/>
+<node id="194.0" label="Malcolm Curtis"/>
+<node id="89.0" label="average of June 6"/>
+<node id="97.0" label="average of August 8"/>
+<node id="111.0" label="average of October 10"/>
+<node id="119.0" label="average of July 7"/>
+<node id="206.0" label="Joanna Millican"/>
+<node id="11.0" label="Tom Cane"/>
+<node id="41.0" label="Michael Howe"/>
+<node id="142.0" label="Dani Doughty"/>
+<node id="153.0" label="average of September 9"/>
+<node id="90.0" label="Ashton Kelly"/>
+<node id="87.0" label="average of December 12"/>
+<node id="70.0" label="James Veira"/>
+<node id="98.0" label="Esther Darrah"/>
+<node id="12.0" label="Victoria Beardwood"/>
+<node id="59.0" label="James Thacker"/>
+<node id="77.0" label="Anthony Phillips"/>
+<node id="65.0" label="Luke Downs"/>
+<node id="148.0" label="Rebecca Holdsworth"/>
+<node id="93.0" label="average of January 1"/>
+<node id="68.0" label="Fliss Gruneberg"/>
+<node id="7.0" label="Richard Lindner"/>
+<node id="165.0" label="average of April 4"/>
+<node id="101.0" label="average of December 12"/>
+<node id="162.0" label="Dan Ross Greengrass"/>
+<node id="51.0" label="Alex Lawson"/>
+<node id="157.0" label="average of August 8"/>
+<node id="74.0" label="Patrick McKearney"/>
+<node id="176.0" label="George Darrah"/>
+<node id="149.0" label="average of June 6"/>
+<node id="8.0" label="average of October 10"/>
+<node id="203.0" label="average of August 8"/>
+<node id="138.0" label="Zoë Longbottom"/>
+<node id="33.0" label="average of August 8"/>
+<node id="29.0" label="Alex Butcher"/>
+<node id="35.0" label="Oliver Allington"/>
+<node id="23.0" label="Angus Reger"/>
+<node id="159.0" label="average of March 3"/>
+<node id="167.0" label="average of October 10"/>
+<node id="204.0" label="Robbie Emerson"/>
+<node id="20.0" label="average of March 3"/>
+<node id="132.0" label="average of May 5"/>
+<node id="182.0" label="average of April 4"/>
+<node id="60.0" label="average of June 6"/>
+<node id="184.0" label="average of October 10"/>
+<node id="146.0" label="average of April 4"/>
+</nodes>
+<edges count="119">
+<edge id="0.0" source="127" target="128"/>
+<edge id="1.0" source="0" target="1"/>
+<edge id="2.0" source="129" target="131"/>
+<edge id="3.0" source="129" target="130"/>
+<edge id="4.0" source="17" target="19"/>
+<edge id="5.0" source="17" target="18"/>
+<edge id="6.0" source="178" target="179"/>
+<edge id="7.0" source="205" target="206"/>
+<edge id="8.0" source="76" target="77"/>
+<edge id="9.0" source="93" target="94"/>
+<edge id="10.0" source="163" target="164"/>
+<edge id="11.0" source="137" target="138"/>
+<edge id="12.0" source="119" target="120"/>
+<edge id="13.0" source="8" target="9"/>
+<edge id="14.0" source="186" target="188"/>
+<edge id="15.0" source="186" target="187"/>
+<edge id="16.0" source="197" target="198"/>
+<edge id="17.0" source="171" target="172"/>
+<edge id="18.0" source="212" target="213"/>
+<edge id="19.0" source="42" target="43"/>
+<edge id="20.0" source="111" target="112"/>
+<edge id="21.0" source="50" target="51"/>
+<edge id="22.0" source="24" target="26"/>
+<edge id="23.0" source="153" target="154"/>
+<edge id="24.0" source="24" target="27"/>
+<edge id="25.0" source="103" target="105"/>
+<edge id="26.0" source="103" target="104"/>
+<edge id="27.0" source="24" target="25"/>
+<edge id="28.0" source="69" target="70"/>
+<edge id="29.0" source="84" target="85"/>
+<edge id="30.0" source="84" target="86"/>
+<edge id="31.0" source="146" target="147"/>
+<edge id="32.0" source="108" target="110"/>
+<edge id="33.0" source="108" target="109"/>
+<edge id="34.0" source="146" target="148"/>
+<edge id="35.0" source="125" target="126"/>
+<edge id="36.0" source="2" target="3"/>
+<edge id="37.0" source="95" target="96"/>
+<edge id="38.0" source="161" target="162"/>
+<edge id="39.0" source="207" target="208"/>
+<edge id="40.0" source="207" target="209"/>
+<edge id="41.0" source="78" target="79"/>
+<edge id="42.0" source="10" target="12"/>
+<edge id="43.0" source="139" target="140"/>
+<edge id="44.0" source="117" target="118"/>
+<edge id="45.0" source="10" target="11"/>
+<edge id="46.0" source="169" target="170"/>
+<edge id="47.0" source="214" target="215"/>
+<edge id="48.0" source="87" target="88"/>
+<edge id="49.0" source="40" target="41"/>
+<edge id="50.0" source="57" target="58"/>
+<edge id="51.0" source="184" target="185"/>
+<edge id="52.0" source="57" target="59"/>
+<edge id="53.0" source="199" target="200"/>
+<edge id="54.0" source="33" target="35"/>
+<edge id="55.0" source="33" target="34"/>
+<edge id="56.0" source="48" target="49"/>
+<edge id="57.0" source="155" target="156"/>
+<edge id="58.0" source="101" target="102"/>
+<edge id="59.0" source="71" target="72"/>
+<edge id="60.0" source="201" target="202"/>
+<edge id="61.0" source="182" target="183"/>
+<edge id="62.0" source="55" target="56"/>
+<edge id="63.0" source="38" target="39"/>
+<edge id="64.0" source="89" target="90"/>
+<edge id="65.0" source="216" target="217"/>
+<edge id="66.0" source="167" target="168"/>
+<edge id="67.0" source="4" target="5"/>
+<edge id="68.0" source="123" target="124"/>
+<edge id="69.0" source="106" target="107"/>
+<edge id="70.0" source="64" target="65"/>
+<edge id="71.0" source="193" target="194"/>
+<edge id="72.0" source="64" target="66"/>
+<edge id="73.0" source="175" target="176"/>
+<edge id="74.0" source="175" target="177"/>
+<edge id="75.0" source="46" target="47"/>
+<edge id="76.0" source="141" target="142"/>
+<edge id="77.0" source="115" target="116"/>
+<edge id="78.0" source="73" target="74"/>
+<edge id="79.0" source="73" target="75"/>
+<edge id="80.0" source="132" target="133"/>
+<edge id="81.0" source="132" target="134"/>
+<edge id="82.0" source="20" target="21"/>
+<edge id="83.0" source="149" target="150"/>
+<edge id="84.0" source="191" target="192"/>
+<edge id="85.0" source="62" target="63"/>
+<edge id="86.0" source="80" target="81"/>
+<edge id="87.0" source="13" target="14"/>
+<edge id="88.0" source="157" target="158"/>
+<edge id="89.0" source="28" target="29"/>
+<edge id="90.0" source="99" target="100"/>
+<edge id="91.0" source="36" target="37"/>
+<edge id="92.0" source="91" target="92"/>
+<edge id="93.0" source="165" target="166"/>
+<edge id="94.0" source="203" target="204"/>
+<edge id="95.0" source="180" target="181"/>
+<edge id="96.0" source="6" target="7"/>
+<edge id="97.0" source="121" target="122"/>
+<edge id="98.0" source="135" target="136"/>
+<edge id="99.0" source="210" target="211"/>
+<edge id="100.0" source="173" target="174"/>
+<edge id="101.0" source="44" target="45"/>
+<edge id="102.0" source="195" target="196"/>
+<edge id="103.0" source="143" target="144"/>
+<edge id="104.0" source="143" target="145"/>
+<edge id="105.0" source="113" target="114"/>
+<edge id="106.0" source="52" target="53"/>
+<edge id="107.0" source="52" target="54"/>
+<edge id="108.0" source="22" target="23"/>
+<edge id="109.0" source="151" target="152"/>
+<edge id="110.0" source="82" target="83"/>
+<edge id="111.0" source="189" target="190"/>
+<edge id="112.0" source="60" target="61"/>
+<edge id="113.0" source="67" target="68"/>
+<edge id="114.0" source="30" target="32"/>
+<edge id="115.0" source="159" target="160"/>
+<edge id="116.0" source="30" target="31"/>
+<edge id="117.0" source="97" target="98"/>
+<edge id="118.0" source="15" target="16"/>
+</edges>
+</graph>
+</gexf>
+

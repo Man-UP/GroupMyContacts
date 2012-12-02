@@ -2,6 +2,7 @@ package clustering;
 
 import java.util.HashSet;
 import java.util.Map.Entry;
+import java.util.regex.Pattern;
 import java.util.Set;
 
 import models.Contact;
@@ -32,8 +33,8 @@ public class LanguageCluster extends Clustering {
         Set<Cluster> clusters = new HashSet<Cluster>();
         
         for(Set<Contact> set : raw_clusters){
-        	String label="";
-        	clusters.add(new Cluster(set,label);
+        	String label= makeLabel(set);
+        	clusters.add(new Cluster(set,label));
         	
         }
         
@@ -55,7 +56,22 @@ public class LanguageCluster extends Clustering {
         
 
         
-	}	
+	}
+	
+	private static String makeLabel(Set<Contact> set){
+		String label="Languages: ";
+		Contact contact = set.iterator().next();
+		
+		for(Entry<String,String> entry : contact.entrySet()){
+			if(entry.getKey().contains("Language")){
+				String possibleLanguage = entry.getValue();
+				if(Pattern.matches("[a-zA-Z]+", possibleLanguage))
+				  label+=entry.getValue() + ", ";
+			}
+		}
+		
+		return label;
+	}
 
 	private static Set<String> getLanguages(Contact contact){
 		Set<String> langs = new HashSet<String>();

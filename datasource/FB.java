@@ -35,7 +35,9 @@ public class FB {
 		String query = "me/friends";
 		
 		// These are the fields of the friends that we ask for
-		String fields = "birthday,name,hometown";//"birthday,name,about,bio,gender,quotes,address,hometown,interested_in,religion,sports,relationship_status";
+		String fields = "birthday,name,about,bio,gender,quotes,address,hometown,"+
+						"interested_in,religion,sports,relationship_status,education,"+
+						"inspirational_people, political, languages, books";
 		
 		//fields+=",likes";
 		

@@ -3,12 +3,13 @@ package main;
 import java.util.Set;
 
 import models.Contact;
-import output.Cluster;
 import output.ClustersToGEXF;
 import clustering.BirthMonthCluster;
 import clustering.BirthdayCluster;
 import clustering.Clustering;
 import clustering.HomeTownCluster;
+import clustering.LanguageCluster;
+import clustering.bowCluster;
 import datasource.FB;
 
 public class Main {
@@ -46,6 +47,8 @@ public class Main {
 			case 1 : clusterer = new HomeTownCluster(); break;
 			case 2 : clusterer = new BirthMonthCluster(); break;
 			case 3 : clusterer = new BirthdayCluster(); break;
+			case 4 : clusterer = new bowCluster(); break;
+			case 5 : clusterer = new LanguageCluster(); break;
 			default : throw new RuntimeException("You didn't give an existing clusterer option");
 			}
 		}

@@ -66,7 +66,7 @@ public class LanguageCluster extends Clustering {
 			if(entry.getKey().contains("Language")){
 				String possibleLanguage = entry.getValue();
 				if(Pattern.matches("[a-zA-Z]+", possibleLanguage))
-				  label+=entry.getValue() + ", ";
+				  label+=entry.getValue() + " ";
 			}
 		}
 		

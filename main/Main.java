@@ -13,6 +13,19 @@ public class Main {
 	public static void main(String[] args){
 		
 		/*
+		 * We're expecting an access taken as args[0]
+		 */
+		
+		try{
+			String access_token = args[0];
+			FB.setAccessToken(access_token);
+		}
+		catch(IndexOutOfBoundsException e){
+			System.err.println("Access Token not given");
+			System.exit(1);
+		}
+		
+		/*
 		 * FB contains all the logic for talking to Facebook
 		 */
 		

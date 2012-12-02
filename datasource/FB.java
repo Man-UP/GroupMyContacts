@@ -19,17 +19,12 @@ public class FB {
 	private static final String app_id = "212113275590062";
 	private static final String app_secret = "c46e82a7fd92912a713963dc8c71d310";
 	
-	private static final FacebookClient client;
-	
-	static{
+	private static FacebookClient client;
+
+	public static void setAccessToken(String access_token) {
+		client = new DefaultFacebookClient(access_token);
 		
-		AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(app_id,app_secret);
-		
-		client = new DefaultFacebookClient(
-				"AAACEdEose0cBAF7vNaUQVegAhZAQZAGLPecpQ16h2N13MNNY9hk9c9aE57baBmBJ1RnWPZCUfmHBSbNvYTHpSLmoJoIkDtuwSCddiOczA4N36Kt0xWd"				 
-				//accessToken.getAccessToken()
-				);		
-	}
+	}	
 	
 	/*
 	 * Get the friends of a person using a person id
@@ -71,6 +66,8 @@ public class FB {
 		Double lat = place.getLocation().getLatitude();
 		Double lon = place.getLocation().getLongitude();
 
+		//System.out.println(lon+"|"+lat);
+		
 		return lon+"|"+lat;
 		
 		/*try{
@@ -87,6 +84,8 @@ public class FB {
 		
 		*/
 	}
+
+
 	
 	
 }

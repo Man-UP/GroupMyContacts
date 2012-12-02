@@ -40,7 +40,8 @@ public class Main {
 			System.exit(1);
 		}
 		
-		Set<Contact> friends = FB.getFriends("");
+		Set<Contact> contacts = FB.getMyFriends();
+		contacts = FB.crawlMyFriends(contacts);
 		
 		Clustering clusterer = null;
 		
@@ -67,8 +68,8 @@ public class Main {
 		try{
 			
 			switch(Integer.parseInt(args[2])){
-			case 1 : clusterer.print_clusters(friends); break;
-			case 2 : System.out.println(ClustersToGEXF.make(clusterer.cluster(friends))); break;
+			case 1 : clusterer.print_clusters(contacts); break;
+			case 2 : System.out.println(ClustersToGEXF.make(clusterer.cluster(contacts))); break;
 			default : throw new RuntimeException("You didn't give an output option");
 			}
 			

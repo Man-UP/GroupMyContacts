@@ -11,46 +11,82 @@ import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.FacebookClient.AccessToken;
 import com.restfb.Parameter;
+import com.restfb.exception.FacebookException;
 import com.restfb.types.Place;
 import com.restfb.types.User;
+
+/**
+ * 
+ * @author Man-UP Giles, Dragos
+ * FB creates the link to facebook api.
+ * Link: RESTfb.com
+ *
+ */
 
 public class FB {
 
 	private static final String app_id = "212113275590062";
 	private static final String app_secret = "c46e82a7fd92912a713963dc8c71d310";
+	private static String query;
+	private static String queryFields;
 	
 	private static FacebookClient client;
 
 	public static void setAccessToken(String access_token) {
 		client = new DefaultFacebookClient(access_token);
+		query = "me/friends";
+		queryFields = "birthday,name,about,bio,gender,quotes,address,hometown,"+
+				 "interested_in,religion,sports,relationship_status,education,"+
+				 "inspirational_people, political, languages, books";
 		
 	}	
 	
 	/*
-	 * Get the friends of a person using a person id
+	 * Gets the main user's friend's by returning a Set<contacts> .
 	 */
 	
-	static public Set<Contact> getFriends(String person_id){
+	static public Set<Contact> getMyFriends(){
 		
-		String query = "me/friends";
-		
-		// These are the fields of the friends that we ask for
-		String fields = "birthday,name,about,bio,gender,quotes,address,hometown,"+
-						"interested_in,religion,sports,relationship_status,education,"+
-						"inspirational_people, political, languages, books";
 		
 		//fields+=",likes";
 		
-		Connection<User> myFriends = client.fetchConnection(query, User.class,Parameter.with("fields", fields));
+		Connection<User> myFriends = client.fetchConnection(query, User.class,Parameter.with("fields", queryFields));
 
-		List<User> friends = myFriends.getData();
+		List<User> userList = myFriends.getData();
 		Set<Contact> contacts = new HashSet<Contact>();
 		
-		for(User user: friends){
+		for(User user: userList){
 			//System.out.println(user.getName());
 			
 			Contact c = Contact.createContact(user);
 			contacts.add(c);			
+		}
+		
+		return contacts;
+	}
+	
+	/*
+	 * Expand the clusterer to crawl on friend's friend list aswell.
+	 * query is modified to friendId/friends
+	 * 
+	 * Issue: some don't have their friend list public. Solution: Catch unauthorised
+	 * exception and go to next contact. New issue: java.util.ConcurrentModificationException
+	 */
+	
+	static public Set<Contact> crawlMyFriends(Set<Contact> contacts) throws FacebookException
+	{
+		for(Contact someContact: contacts){
+			queryLinkToContact(someContact);
+
+			Connection<User> someContactFriends;
+			
+			try{someContactFriends = client.fetchConnection(query, User.class,Parameter.with("fields", queryFields));}
+			catch(FacebookException e) {continue;}
+			System.out.println(query + " continue");
+			List<User> userList = someContactFriends.getData();
+			for(User user: userList){
+				contacts.add(Contact.createContact(user));
+			}
 		}
 		
 		return contacts;
@@ -67,25 +103,23 @@ public class FB {
 		
 		Double lat = place.getLocation().getLatitude();
 		Double lon = place.getLocation().getLongitude();
-
-		//System.out.println(lon+"|"+lat);
 		
 		return lon+"|"+lat;
 		
-		/*try{
-		String lat_s = (lat.toString()+"00").replace('.', 'n').substring(0,4);
-		String lon_s = (lon.toString()+"00").replace('.', 'w').substring(0,4);
-		
-		
-		return lon_s+"|"+lat_s;
-		}
-		catch(Exception e){
-			System.out.println(lat+"   "+lon);
-		}
-		return "";
-		
-		*/
 	}
+	
+	/*
+	 * Returns a query link to the contact's friends.
+	 * Format example 36920689/friends
+	 */
+	public static void queryLinkToContact(Contact contact){
+		String queryLink="";
+		String contactId = contact.get("Id");
+		queryLink = contactId + "/friends";
+		
+		query = queryLink;
+	}
+	
 
 
 	

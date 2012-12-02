@@ -92,11 +92,11 @@ public class LanguageCluster extends Clustering {
 				Set<String> langs0 = getLanguages(c0);
 				Set<String> langs1 = getLanguages(c1);				
 				
-				if(langs0.isEmpty() || langs1.isEmpty()) return 20.0;
+				if(langs0.isEmpty() || langs1.isEmpty()) return 40.0;
 				
 				Set<String> intersection = intersection(c0, c1);
 				
-				if(intersection.isEmpty()) return 20.0;
+				if(intersection.isEmpty()) return 40.0;
 				
 				//System.out.println(""+(langs0.size()+langs1.size())/intersection.size());
 				

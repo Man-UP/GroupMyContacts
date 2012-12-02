@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import models.Contact;
+import output.Cluster;
 
 import com.aliasi.cluster.CompleteLinkClusterer;
 import com.aliasi.cluster.HierarchicalClusterer;
@@ -24,20 +25,22 @@ public class HomeTownCluster {
 
 	static public void print_clusters(Set<Contact> friends){
 		
-		Set<Set<Contact>> friend_months = HomeTownCluster.cluster(friends);
+		Set<Cluster> friend_months = HomeTownCluster.cluster(friends);
 		
 		System.out.println(friend_months.size()+" clusters");
 		
-		for(Set<Contact> set : friend_months){
+		for(Cluster cluster : friend_months){
 			System.out.println("=============================================");
-			for(Contact friend : set){
+			System.out.println(cluster.name);
+			System.out.println("=============================================");
+			for(Contact friend : cluster.nodes){
 				System.out.println(friend);
 			}
 		}		
 		
 	}	
 	
-	static public Set<Set<Contact>> cluster(Set<Contact> contacts){
+	static public Set<Cluster> cluster(Set<Contact> contacts){
 		
 		
 		String[][] LON_LAT = new String[contacts.size()][];
@@ -89,7 +92,16 @@ public class HomeTownCluster {
         = new CompleteLinkClusterer<Contact>(1,ht_distance);
 		
        
-        return clusterer.cluster(contacts);
+        Set<Set<Contact>> raw_clusters = clusterer.cluster(contacts);
+        
+        Set<Cluster> clusters = new HashSet<Cluster>();
+        
+        for(Set<Contact> set : raw_clusters){
+        	String label = "near "+(set.iterator().next().get("Hometown.name"));
+        	clusters.add(new Cluster(set,label));
+        }
+        
+        return clusters;
 
 	}	
 	/*

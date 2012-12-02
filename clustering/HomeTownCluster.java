@@ -60,13 +60,17 @@ public class HomeTownCluster {
 	            //matrix.setLabel(i,city1);
 	        	//System.out.println(LON_LAT[i][1] + LON_LAT[i][2]);
 	            double lonA = toRadians(LON_LAT[i][1],"w");
+	            System.out.println("lonA = " + lonA + " NotSplit = "+ LON_LAT[i][1]);
 	            double latA = toRadians(LON_LAT[i][2],"n");
+	            System.out.println("latA = " + latA);
 	            
 	            for (int j = i+1; j < LON_LAT.length; ++j) {
 	                //String city2 = LON_LAT[j][0];
 	            	//System.out.println("j " + LON_LAT[j][1] + LON_LAT[j][2]);
 	                double lonB = toRadians(LON_LAT[j][1],"w");
+	                System.out.println("lonB = "+ lonB);
 	                double latB = toRadians(LON_LAT[j][2],"n");
+	                System.out.println("latB = "+ latB);
 	                double dist = d(lonA,latA,lonB,latB);
 			// System.out.println(city1 + "<==>" + city2 + "=" + dist);
 	                matrix.setValue(i,j,dist);
@@ -88,10 +92,9 @@ public class HomeTownCluster {
 
 	    static public double toRadians(String frac, String divider) {
 	        String[] nums = frac.split(divider);
-	        System.out.println(frac);
-	        double degs = Double.parseDouble(nums[0])
-	            + Double.parseDouble(nums[1])/60.0;
-	        System.out.println(degs);
+	        System.out.println("frac = " + frac + " nums[0]= "+nums[0] + " nums[1]= "+nums[1]);
+	        double degs = Double.parseDouble(nums[0]) + Double.parseDouble(nums[1])/60.0;
+	        System.out.println("degs = " + degs);
 	        return Math.toRadians(degs);
 	    }
 }

@@ -70,7 +70,10 @@ public class FB {
 		
 		Double lat = place.getLocation().getLatitude();
 		Double lon = place.getLocation().getLongitude();
-		try{
+
+		return lon+"|"+lat;
+		
+		/*try{
 		String lat_s = (lat.toString()+"00").replace('.', 'n').substring(0,4);
 		String lon_s = (lon.toString()+"00").replace('.', 'w').substring(0,4);
 		
@@ -82,7 +85,7 @@ public class FB {
 		}
 		return "";
 		
-		
+		*/
 	}
 	
 	

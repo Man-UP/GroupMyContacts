@@ -41,7 +41,7 @@ public class BirthdayCluster {
 			
 			private int days_in_month(int month){
 				
-				switch(mont){
+				switch(month){
 					case 1 : return 31;
 					case 2 : return 28;
 					case 3 : return 31;
@@ -72,10 +72,11 @@ public class BirthdayCluster {
 				int c0bd = Integer.parseInt(bm0.substring(2,4));
 				int c1bd = Integer.parseInt(bm1.substring(2,4));
 				
-				String c0dayinyear = days_in_month(c0bm) + c0bd;
-				String c1dayinyear = days_in_month(c1bm) + c1bd;
+				int c0dayinyear = days_in_month(c0bm) + c0bd;
+				int c1dayinyear = days_in_month(c1bm) + c1bd;
 				
 				int dis = Math.abs(c0dayinyear - c1dayinyear);
+				if(dis > 182.5) dis = 365-dis;
 				
 				//System.out.println(c0bm+" with "+c1bm+" is "+eq);
 

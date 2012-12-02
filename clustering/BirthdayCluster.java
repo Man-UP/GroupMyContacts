@@ -13,9 +13,9 @@ import com.aliasi.cluster.HierarchicalClusterer;
 import com.aliasi.util.Distance;
 
 /*
- * Not Done Yet
  * 
- * The idea is to replace bm_distance below so that it works out the distance in the
+ *
+ * bd_distance below works out the distance in the
  * calendar year (i.e. num of days into year modulo 365)
  * 
  */
@@ -58,10 +58,10 @@ public class BirthdayCluster  extends Clustering {
 	
 	public Dendrogram<Contact> cluster_for_d(Set<Contact> contacts){
 		
-		Distance<Contact> bm_distance = getDistance();
+		Distance<Contact> bd_distance = getDistance();
 		
         HierarchicalClusterer<Contact> clusterer 
-        = new CompleteLinkClusterer<Contact>(0,bm_distance);
+        = new CompleteLinkClusterer<Contact>(0,bd_distance);
 		
         Set<Contact> rem = new HashSet<Contact>();
         for(Contact c : contacts){

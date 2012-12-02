@@ -18,15 +18,17 @@ public class Main {
 	public static void main(String[] args){
 		
 		/*
-		 * We're expecting an access taken as args[0]
-		 * and the clustering method as args[1]
+		 * Args passed:
+		 *  [0]-access token [1] - clusterer [2] - output type
 		 * - 1 is HomeTownCluster
 		 * - 2 is BirthMonthCluster
 		 * - 3 is BirthdayCluster
+		 * - 4 is bowCluster
+		 * - 5 is LanguageCluster
 		 * 
 		 * args[2] then tells us the output required 
 		 * - 1 is print out
-		 * - 2 is GEXF
+		 * - 2 is GEXF format (gephi - graph visualisation)
 		 */
 		
 		try{

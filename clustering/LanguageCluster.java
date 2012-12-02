@@ -33,7 +33,8 @@ public class LanguageCluster extends Clustering {
         
         for(Set<Contact> set : raw_clusters){
         	String label="";
-        	clusters.add(new Cluster(set,label));
+        	clusters.add(new Cluster(set,label);
+        	
         }
         
         return clusters;
@@ -58,6 +59,7 @@ public class LanguageCluster extends Clustering {
 
 	private static Set<String> getLanguages(Contact contact){
 		Set<String> langs = new HashSet<String>();
+		int i=0;
 		for(Entry<String,String> entry : contact.entrySet()){
 			if(entry.getKey().contains("Language")){
 				langs.add(entry.getValue());
@@ -92,7 +94,10 @@ public class LanguageCluster extends Clustering {
 				
 				Set<String> intersection = new HashSet<String>();
 				
-				for(String s : langs0) if(langs1.contains(s)) intersection.add(s);
+				for(String s : langs0) 
+					if(langs1.contains(s)) 
+						intersection.add(s);
+				
 				return intersection;
 			}
 			

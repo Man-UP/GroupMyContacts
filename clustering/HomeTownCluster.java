@@ -43,6 +43,10 @@ public class HomeTownCluster {
 			}
 		}
 		
+		String[][] temp = new String[i-1][];
+		System.arraycopy(LON_LAT, 0, temp, 0, i-1);
+		LON_LAT = temp;
+		
 		System.out.println(getDistanceMatrix(LON_LAT));
 		
 		return null;
@@ -59,17 +63,17 @@ public class HomeTownCluster {
 	            //String city1 = LON_LAT[i][0];
 	            //matrix.setLabel(i,city1);
 	        	//System.out.println(LON_LAT[i][1] + LON_LAT[i][2]);
-	            double lonA = toRadians(LON_LAT[i][1],"w");
+	            double lonA = Math.toRadians(Double.parseDouble(LON_LAT[i][1]));
 	            System.out.println("lonA = " + lonA + " NotSplit = "+ LON_LAT[i][1]);
-	            double latA = toRadians(LON_LAT[i][2],"n");
+	            double latA = Math.toRadians(Double.parseDouble(LON_LAT[i][2]));
 	            System.out.println("latA = " + latA);
 	            
 	            for (int j = i+1; j < LON_LAT.length; ++j) {
 	                //String city2 = LON_LAT[j][0];
 	            	//System.out.println("j " + LON_LAT[j][1] + LON_LAT[j][2]);
-	                double lonB = toRadians(LON_LAT[j][1],"w");
+	                double lonB = Math.toRadians(Double.parseDouble(LON_LAT[j][1]));
 	                System.out.println("lonB = "+ lonB);
-	                double latB = toRadians(LON_LAT[j][2],"n");
+	                double latB = Math.toRadians(Double.parseDouble(LON_LAT[j][2]));
 	                System.out.println("latB = "+ latB);
 	                double dist = d(lonA,latA,lonB,latB);
 			// System.out.println(city1 + "<==>" + city2 + "=" + dist);
@@ -90,11 +94,4 @@ public class HomeTownCluster {
 	                           * Math.sin(latB) ) ) );
 	    }
 
-	    static public double toRadians(String frac, String divider) {
-	        String[] nums = frac.split(divider);
-	        System.out.println("frac = " + frac + " nums[0]= "+nums[0] + " nums[1]= "+nums[1]);
-	        double degs = Double.parseDouble(nums[0]) + Double.parseDouble(nums[1])/60.0;
-	        System.out.println("degs = " + degs);
-	        return Math.toRadians(degs);
-	    }
 }

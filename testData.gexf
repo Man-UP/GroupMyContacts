@@ -1,0 +1,269 @@
+<gexf version='1.1'>
+<meta><creator>GroupMYContacts</creator></meta>
+<graph defaultedgetype='directed' idtype='string' type='static'>
+<nodes count='148'>
+<node id='67.0' label='Mădălina Sălcianu'/>
+<node id='36.0' label='near Sandbach'/>
+<node id='32.0' label='near Dragasani'/>
+<node id='40.0' label='near Iasi, Romania'/>
+<node id='142.0' label='near Brasov, Romania'/>
+<node id='27.0' label='Mihai Anca'/>
+<node id='37.0' label='Matt Oakes'/>
+<node id='144.0' label='Alecs Dumitru'/>
+<node id='53.0' label='near Oldham, United Kingdom'/>
+<node id='39.0' label='Robert AI White'/>
+<node id='112.0' label='Camelia Mihalcea'/>
+<node id='48.0' label='near Tulcea'/>
+<node id='92.0' label='Cristina Becheanu'/>
+<node id='12.0' label='near Plovdiv, Bulgaria'/>
+<node id='21.0' label='near Nicosia, Cyprus'/>
+<node id='54.0' label='Sarah Louise Thomas'/>
+<node id='45.0' label='Dragos George Ionica'/>
+<node id='88.0' label='Forumul Galatenilor'/>
+<node id='136.0' label='near Road Town'/>
+<node id='31.0' label='Andrei Ruse'/>
+<node id='124.0' label='Gabriel Isaia'/>
+<node id='64.0' label='George Soroceanu'/>
+<node id='16.0' label='near Tirgu Mures, Mures, Romania'/>
+<node id='139.0' label='Mike Danger Squinter'/>
+<node id='94.0' label='Elena Gologan'/>
+<node id='11.0' label='Ciprian Tomoiaga'/>
+<node id='99.0' label='Andreea Bujoreanu'/>
+<node id='25.0' label='Gabriel Necula'/>
+<node id='120.0' label='SevenCafe Galati'/>
+<node id='42.0' label='near Pechea'/>
+<node id='20.0' label='Cristina Cristescu'/>
+<node id='7.0' label='Ike Akpala'/>
+<node id='108.0' label='Alex Bogos'/>
+<node id='130.0' label='near Braila'/>
+<node id='109.0' label='Lid Lidia'/>
+<node id='15.0' label='Raul Valean'/>
+<node id='47.0' label='Zhuang Tian'/>
+<node id='66.0' label='Veliche Ciprian'/>
+<node id='74.0' label='Cristina David'/>
+<node id='138.0' label='near Zagreb, Croatia'/>
+<node id='145.0' label='Marius Popescu'/>
+<node id='52.0' label='Pete Hamilton-Gray'/>
+<node id='59.0' label='Marius Sorin'/>
+<node id='76.0' label='Violeta Crivat'/>
+<node id='116.0' label='Mirela Dragomir'/>
+<node id='0.0' label='near Wigan'/>
+<node id='14.0' label='near Crasna, Salaj, Romania'/>
+<node id='105.0' label='Andra Grigoras'/>
+<node id='65.0' label='Adina-Elena Mitrofan'/>
+<node id='50.0' label='Paul Iacomi'/>
+<node id='103.0' label='Nicoleta Mastacan'/>
+<node id='51.0' label='near Kidderminster'/>
+<node id='121.0' label='Mihaela Geo'/>
+<node id='78.0' label='Cosmin Istrate'/>
+<node id='43.0' label='Andreea-Cosmina Musat'/>
+<node id='134.0' label='near Dorohoiu, Botosani, Romania'/>
+<node id='126.0' label='Adi Balcan'/>
+<node id='19.0' label='Mester Flavius'/>
+<node id='46.0' label='near Canton, Guangdong, China'/>
+<node id='115.0' label='Diana Mihaela'/>
+<node id='28.0' label='near Lahore, Pakistan'/>
+<node id='133.0' label='Syed Aqib Aftab'/>
+<node id='2.0' label='near Curtea de Arges'/>
+<node id='90.0' label='Silvia Haram'/>
+<node id='98.0' label='Radu Ciupitu'/>
+<node id='4.0' label='near Moscow, Russia'/>
+<node id='104.0' label='Geanina Lazar'/>
+<node id='9.0' label='Cassie Li'/>
+<node id='102.0' label='Geanina Gabriela'/>
+<node id='34.0' label='near Calcutta, India'/>
+<node id='30.0' label='near Constanta, Romania'/>
+<node id='75.0' label='Stilexpert Galati'/>
+<node id='140.0' label='near Telford'/>
+<node id='61.0' label='Ramona Marina'/>
+<node id='56.0' label='Dave Adler'/>
+<node id='123.0' label='Ciprian Constantinescu'/>
+<node id='100.0' label='Radu Vlad'/>
+<node id='89.0' label='Iulian Crihana'/>
+<node id='135.0' label='Alex Roșu'/>
+<node id='58.0' label='Diana Visan'/>
+<node id='107.0' label='Anca Nicole Balaban'/>
+<node id='82.0' label='Lucia Georgiana Vasile'/>
+<node id='119.0' label='Dumitru Razvan'/>
+<node id='118.0' label='Andrei Toma'/>
+<node id='106.0' label='Alina Daniela Patriche'/>
+<node id='17.0' label='Barta Toni'/>
+<node id='23.0' label='near Bucharest, Romania'/>
+<node id='55.0' label='near London, United Kingdom'/>
+<node id='80.0' label='Paul Eduard Costescu'/>
+<node id='35.0' label='Sreeyanka Ghosh'/>
+<node id='41.0' label='Irina Fotache'/>
+<node id='49.0' label='Radu Chichi'/>
+<node id='72.0' label='Andreea Cristea'/>
+<node id='97.0' label='Petrisor Tonita'/>
+<node id='60.0' label='Olivia Radu'/>
+<node id='117.0' label='Norina Mihaela'/>
+<node id='10.0' label='near Bistrita'/>
+<node id='73.0' label='Ana-Maria Carană'/>
+<node id='77.0' label='Radu Jipa'/>
+<node id='101.0' label='Oana Maria'/>
+<node id='96.0' label='Raluca Andreea'/>
+<node id='129.0' label='Ali Mar'/>
+<node id='1.0' label='Jordan Wallace'/>
+<node id='111.0' label='Roxana Catalina'/>
+<node id='63.0' label='Postelnicu Madalina Gabriela'/>
+<node id='81.0' label='Claudiu Dan M'/>
+<node id='79.0' label='Ovidiu Toader'/>
+<node id='141.0' label='Amy Copson'/>
+<node id='95.0' label='Ramona Ciobanu'/>
+<node id='127.0' label='Silvia Andreea'/>
+<node id='84.0' label='Andrei Tăbăcaru'/>
+<node id='93.0' label='Adrian Vicol'/>
+<node id='87.0' label='Dima Alexandra'/>
+<node id='62.0' label='Danut Coman'/>
+<node id='29.0' label='Umair Shamim'/>
+<node id='24.0' label='Bogdan Gună'/>
+<node id='70.0' label='Alina Alexandra Oană'/>
+<node id='8.0' label='near Shenyang Shi, Liaoning, China'/>
+<node id='110.0' label='Alecs Sol'/>
+<node id='113.0' label='Stariradu Otilia'/>
+<node id='13.0' label='Atanas Abrashev'/>
+<node id='22.0' label='Ersel Aker'/>
+<node id='44.0' label='near Kismaayo, Jubbada Hoose, Somalia'/>
+<node id='86.0' label='Ioana Costea'/>
+<node id='131.0' label='Gabriel Mihalcea'/>
+<node id='114.0' label='Cristina Mihai'/>
+<node id='71.0' label='Malancea Andreea'/>
+<node id='85.0' label='Ioana Giart'/>
+<node id='143.0' label='Andreea Pascu'/>
+<node id='122.0' label='Emi Vlasceanu'/>
+<node id='91.0' label='Valentin A. Popa'/>
+<node id='146.0' label='near Doncaster'/>
+<node id='132.0' label='near Srinagar, Jammu and Kashmir'/>
+<node id='38.0' label='near Otog, Nei Mongol, China'/>
+<node id='83.0' label='Cristian Scutaru'/>
+<node id='33.0' label='Daniela Florescu'/>
+<node id='68.0' label='Truli Alex'/>
+<node id='18.0' label='near Timisoara, Romania'/>
+<node id='128.0' label='near Piatra Neamt'/>
+<node id='57.0' label='near Galati'/>
+<node id='6.0' label='near Birmingham, United Kingdom'/>
+<node id='69.0' label='Andreea Maria Tărnăuceanu'/>
+<node id='137.0' label='Andre Ryan'/>
+<node id='3.0' label='Lorena Stan'/>
+<node id='125.0' label='Pascanu Anca'/>
+<node id='147.0' label='Ryan Mills'/>
+<node id='5.0' label='Maxim Fedotov'/>
+<node id='26.0' label='Cristina Finta'/>
+</nodes>
+<edges count='112'>
+<edge id='0.0' source='0' target='1'/>
+<edge id='1.0' source='51' target='52'/>
+<edge id='2.0' source='34' target='35'/>
+<edge id='3.0' source='8' target='9'/>
+<edge id='4.0' source='57' target='121'/>
+<edge id='5.0' source='57' target='122'/>
+<edge id='6.0' source='57' target='123'/>
+<edge id='7.0' source='57' target='124'/>
+<edge id='8.0' source='57' target='125'/>
+<edge id='9.0' source='57' target='126'/>
+<edge id='10.0' source='57' target='127'/>
+<edge id='11.0' source='42' target='43'/>
+<edge id='12.0' source='128' target='129'/>
+<edge id='13.0' source='57' target='116'/>
+<edge id='14.0' source='57' target='115'/>
+<edge id='15.0' source='57' target='114'/>
+<edge id='16.0' source='57' target='113'/>
+<edge id='17.0' source='57' target='120'/>
+<edge id='18.0' source='16' target='17'/>
+<edge id='19.0' source='57' target='119'/>
+<edge id='20.0' source='57' target='118'/>
+<edge id='21.0' source='57' target='117'/>
+<edge id='22.0' source='57' target='108'/>
+<edge id='23.0' source='57' target='107'/>
+<edge id='24.0' source='57' target='106'/>
+<edge id='25.0' source='57' target='105'/>
+<edge id='26.0' source='57' target='112'/>
+<edge id='27.0' source='57' target='111'/>
+<edge id='28.0' source='57' target='110'/>
+<edge id='29.0' source='57' target='109'/>
+<edge id='30.0' source='57' target='99'/>
+<edge id='31.0' source='57' target='100'/>
+<edge id='32.0' source='136' target='137'/>
+<edge id='33.0' source='57' target='97'/>
+<edge id='34.0' source='57' target='98'/>
+<edge id='35.0' source='57' target='103'/>
+<edge id='36.0' source='57' target='104'/>
+<edge id='37.0' source='57' target='101'/>
+<edge id='38.0' source='57' target='102'/>
+<edge id='39.0' source='57' target='91'/>
+<edge id='40.0' source='57' target='92'/>
+<edge id='41.0' source='57' target='89'/>
+<edge id='42.0' source='57' target='90'/>
+<edge id='43.0' source='57' target='95'/>
+<edge id='44.0' source='57' target='96'/>
+<edge id='45.0' source='57' target='93'/>
+<edge id='46.0' source='57' target='94'/>
+<edge id='47.0' source='146' target='147'/>
+<edge id='48.0' source='57' target='86'/>
+<edge id='49.0' source='57' target='85'/>
+<edge id='50.0' source='57' target='88'/>
+<edge id='51.0' source='57' target='87'/>
+<edge id='52.0' source='57' target='82'/>
+<edge id='53.0' source='2' target='3'/>
+<edge id='54.0' source='57' target='81'/>
+<edge id='55.0' source='57' target='84'/>
+<edge id='56.0' source='57' target='83'/>
+<edge id='57.0' source='57' target='78'/>
+<edge id='58.0' source='32' target='33'/>
+<edge id='59.0' source='57' target='77'/>
+<edge id='60.0' source='57' target='80'/>
+<edge id='61.0' source='57' target='79'/>
+<edge id='62.0' source='57' target='74'/>
+<edge id='63.0' source='57' target='73'/>
+<edge id='64.0' source='57' target='76'/>
+<edge id='65.0' source='57' target='75'/>
+<edge id='66.0' source='57' target='69'/>
+<edge id='67.0' source='57' target='70'/>
+<edge id='68.0' source='57' target='71'/>
+<edge id='69.0' source='57' target='72'/>
+<edge id='70.0' source='57' target='65'/>
+<edge id='71.0' source='57' target='66'/>
+<edge id='72.0' source='57' target='67'/>
+<edge id='73.0' source='57' target='68'/>
+<edge id='74.0' source='10' target='11'/>
+<edge id='75.0' source='57' target='61'/>
+<edge id='76.0' source='57' target='62'/>
+<edge id='77.0' source='57' target='63'/>
+<edge id='78.0' source='57' target='64'/>
+<edge id='79.0' source='40' target='41'/>
+<edge id='80.0' source='57' target='58'/>
+<edge id='81.0' source='57' target='59'/>
+<edge id='82.0' source='57' target='60'/>
+<edge id='83.0' source='18' target='19'/>
+<edge id='84.0' source='18' target='20'/>
+<edge id='85.0' source='130' target='131'/>
+<edge id='86.0' source='48' target='49'/>
+<edge id='87.0' source='48' target='50'/>
+<edge id='88.0' source='138' target='139'/>
+<edge id='89.0' source='55' target='56'/>
+<edge id='90.0' source='38' target='39'/>
+<edge id='91.0' source='4' target='5'/>
+<edge id='92.0' source='21' target='22'/>
+<edge id='93.0' source='46' target='47'/>
+<edge id='94.0' source='12' target='13'/>
+<edge id='95.0' source='132' target='133'/>
+<edge id='96.0' source='140' target='141'/>
+<edge id='97.0' source='28' target='29'/>
+<edge id='98.0' source='36' target='37'/>
+<edge id='99.0' source='53' target='54'/>
+<edge id='100.0' source='23' target='26'/>
+<edge id='101.0' source='23' target='25'/>
+<edge id='102.0' source='23' target='24'/>
+<edge id='103.0' source='6' target='7'/>
+<edge id='104.0' source='23' target='27'/>
+<edge id='105.0' source='44' target='45'/>
+<edge id='106.0' source='14' target='15'/>
+<edge id='107.0' source='134' target='135'/>
+<edge id='108.0' source='30' target='31'/>
+<edge id='109.0' source='142' target='144'/>
+<edge id='110.0' source='142' target='145'/>
+<edge id='111.0' source='142' target='143'/>
+</edges>
+</graph>
+</gexf>

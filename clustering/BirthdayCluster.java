@@ -45,9 +45,6 @@ public class BirthdayCluster  extends Clustering {
         	int total = 0;
         	for(Contact c : set){
         		total += day_of_year(c.get("Birthday"));
-        		
-        		int doy = day_of_year(c.get("Birthday"));        		
-        		System.out.println(c.get("Birthday")+ "  ->  "+doy);
         	}
         	total /= set.size();
         	

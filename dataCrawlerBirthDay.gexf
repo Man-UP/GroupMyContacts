@@ -1,0 +1,612 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+<meta><creator>GroupMYContacts</creator></meta>
+<graph defaultedgetype='directed' idtype='string' type='static'>
+<nodes count='158'>
+<node id="124" label="Raluca Andreea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="92" label="Criss Fany">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="110" label="average of September 3">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="7" label="average of March 4">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="16" label="Alecs Sol">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="83" label="average of May 2">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="81" label="Adriana Patriche">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="107" label="Andreea Caramidaru">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="97" label="Forumul Galatenilor">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="125" label="average of July 10">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="66" label="Umer Iftikhar">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="109" label="Mester Flavius">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="120" label="Iulia Eu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="37" label="Mădălina Sălcianu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="152" label="Ryan Mills">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="60" label="Pete Hamilton-Gray">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="129" label="Roxana-Florentina Dajbog">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="123" label="Geanina Lazar">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="127" label="Alina Alexandra Oană">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="17" label="average of January 27">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="29" label="Kta Catalina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="132" label="Adi Balcan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="131" label="Mike Danger Squinter">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="71" label="Oana Si Atat">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="134" label="Ramona Ciobanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="27" label="Cristina Mihai">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="112" label="Raul Valean">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="90" label="Dragomir Alina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="80" label="Paul Iacomi">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="65" label="Cassie Li">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="40" label="Lucia Georgiana Vasile">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="0" label="average of December 3">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="137" label="Amy Copson">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="59" label="Jordan Wallace">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="128" label="Norina Mihaela">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="32" label="Ersel Aker">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="14" label="average of July 1">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="20" label="Andreea Cristea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="67" label="average of June 10">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="85" label="Giles Reger">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="63" label="Andreea Bujoreanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="102" label="Cosmin Ungureanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="50" label="Bobaru Daniela">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="72" label="Oana Simona">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="74" label="average of June 24">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="111" label="Mihalcea Ionel">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="35" label="average of November 23">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="10" label="Iulian Crihana">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="79" label="Georgiana Panaite">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="47" label="Ioana Costea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="12" label="George Soroceanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="70" label="Wes Lubse">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="58" label="Cosmin Istrate">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="1" label="Anca Nicole Balaban">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="75" label="Roxana Catalina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="118" label="Adrian Vicol">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="116" label="Alex Preda">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="145" label="Ovidiu Toader">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="138" label="average of February 6">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="23" label="average of December 26">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="84" label="Barta Toni">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="77" label="Mihaela Geo">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="98" label="average of November 9">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="115" label="Valentin A. Popa">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="55" label="Syed Aqib Aftab">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="104" label="Lorena Stan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="143" label="average of August 14">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="76" label="Camelia Mihalcea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="149" label="Ana-Maria Carană">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="144" label="Elena Sorina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="148" label="Alex Bogos">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="68" label="Radu Vlad">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="30" label="average of April 4">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="61" label="average of September 26">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="2" label="Cristina Cristina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="86" label="Dumitru Razvan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="155" label="Silvia Andreea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="4" label="average of June 1">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="53" label="average of September 13">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="142" label="Pascanu Anca">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="36" label="Truli Alex">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="25" label="Veliche Ciprian">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="121" label="Ciprian Tomoiaga">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="101" label="average of May 24">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="38" label="Olivia Radu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="119" label="average of March 24">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="122" label="Robbert Theodoru">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="93" label="average of January 19">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="91" label="Mirela Dragomir">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="64" label="Florin Rosu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="31" label="Alina Cătălina S">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="11" label="Marius Sorin">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="140" label="Cape Interns">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="69" label="Louisa Feng">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="3" label="Nicoleta Mastacan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="106" label="average of July 18">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="57" label="Cristian Scutaru">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="6" label="Sarah Louise Thomas">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="52" label="Andre Ryan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="108" label="Adina-Elena Mitrofan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="156" label="Sreeyanka Ghosh">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="95" label="Dima Alexandra">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="88" label="average of February 18">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="24" label="Radu Ciupitu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="33" label="Paul Eduard Costescu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="73" label="Andrei Toma">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="135" label="Dave Adler">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="99" label="Maxim Fedotov">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="139" label="Andreea-Cosmina Musat">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="94" label="Irina Fotache">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="141" label="Andra Grigoras">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="136" label="Daniela Florescu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="117" label="Marius Popescu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="26" label="Cristina Becheanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="28" label="Ramona Marina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="150" label="Postelnicu Madalina Gabriela">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="62" label="Madalina Mrr">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="78" label="Anthony Mathews">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="133" label="Dragos George Ionica">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="43" label="Alina Daniela Patriche">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="21" label="Alecs Dumitru">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="46" label="Andreea Maria Tărnăuceanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="126" label="Andrei Ruse">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="15" label="Gabriel Necula">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="56" label="Lid Lidia">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="100" label="Diana Visan">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="13" label="Atanas Abrashev">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="19" label="Violeta Crivat">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="49" label="average of August 0">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="96" label="Silvia Haram">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="114" label="average of August 23">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="45" label="Andreea Pascu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="82" label="Cristina Sinziana">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="113" label="Yegor Guskov">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="48" label="Danut Coman">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="157" label="SevenCafe Galati">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="5" label="Umair Shamim">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="147" label="average of April 6">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="8" label="Emi Vlasceanu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="9" label="Andreea Cristina">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="18" label="Petrisor Tonita">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="34" label="Cristina Finta">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="87" label="Bogdan Gună">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="44" label="Cristina Cristescu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="103" label="Radu Chichi">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="39" label="average of April 25">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="42" label="average of December 12">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="154" label="average of April 16">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="105" label="Ciprian Constantinescu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="54" label="Cristina David">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="151" label="Diana Mihaela">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="130" label="average of October 7">
+<viz:color r="250" g="0" b="0"/>
+</node>
+<node id="22" label="Gabriel Mihalcea">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="89" label="Geanina Gabriela">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="41" label="Stariradu Otilia">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="153" label="Alex Roșu">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="146" label="Oana Maria">
+<viz:color r="0" g="250" b="0"/>
+</node>
+<node id="51" label="Andrei Tăbăcaru">
+<viz:color r="0" g="250" b="0"/>
+</node>
+</nodes>
+<edges count='128'>
+<edge id="0" source="0" target="1"/>
+<edge id="1" source="0" target="2"/>
+<edge id="2" source="17" target="21"/>
+<edge id="3" source="0" target="3"/>
+<edge id="4" source="17" target="22"/>
+<edge id="5" source="17" target="19"/>
+<edge id="6" source="110" target="113"/>
+<edge id="7" source="17" target="20"/>
+<edge id="8" source="110" target="112"/>
+<edge id="9" source="110" target="111"/>
+<edge id="10" source="17" target="18"/>
+<edge id="11" source="93" target="97"/>
+<edge id="12" source="93" target="94"/>
+<edge id="13" source="93" target="96"/>
+<edge id="14" source="93" target="95"/>
+<edge id="15" source="119" target="122"/>
+<edge id="16" source="119" target="121"/>
+<edge id="17" source="119" target="120"/>
+<edge id="18" source="119" target="124"/>
+<edge id="19" source="119" target="123"/>
+<edge id="20" source="42" target="48"/>
+<edge id="21" source="42" target="46"/>
+<edge id="22" source="42" target="47"/>
+<edge id="23" source="42" target="44"/>
+<edge id="24" source="42" target="45"/>
+<edge id="25" source="42" target="43"/>
+<edge id="26" source="35" target="37"/>
+<edge id="27" source="35" target="38"/>
+<edge id="28" source="35" target="36"/>
+<edge id="29" source="125" target="129"/>
+<edge id="30" source="125" target="126"/>
+<edge id="31" source="125" target="128"/>
+<edge id="32" source="125" target="127"/>
+<edge id="33" source="49" target="51"/>
+<edge id="34" source="49" target="52"/>
+<edge id="35" source="49" target="50"/>
+<edge id="36" source="154" target="157"/>
+<edge id="37" source="154" target="156"/>
+<edge id="38" source="154" target="155"/>
+<edge id="39" source="147" target="150"/>
+<edge id="40" source="130" target="135"/>
+<edge id="41" source="147" target="149"/>
+<edge id="42" source="130" target="134"/>
+<edge id="43" source="147" target="148"/>
+<edge id="44" source="130" target="137"/>
+<edge id="45" source="130" target="136"/>
+<edge id="46" source="130" target="131"/>
+<edge id="47" source="147" target="153"/>
+<edge id="48" source="147" target="152"/>
+<edge id="49" source="130" target="133"/>
+<edge id="50" source="147" target="151"/>
+<edge id="51" source="130" target="132"/>
+<edge id="52" source="101" target="104"/>
+<edge id="53" source="101" target="103"/>
+<edge id="54" source="101" target="102"/>
+<edge id="55" source="138" target="142"/>
+<edge id="56" source="138" target="141"/>
+<edge id="57" source="138" target="140"/>
+<edge id="58" source="138" target="139"/>
+<edge id="59" source="101" target="105"/>
+<edge id="60" source="4" target="5"/>
+<edge id="61" source="4" target="6"/>
+<edge id="62" source="106" target="108"/>
+<edge id="63" source="106" target="109"/>
+<edge id="64" source="106" target="107"/>
+<edge id="65" source="98" target="99"/>
+<edge id="66" source="98" target="100"/>
+<edge id="67" source="88" target="92"/>
+<edge id="68" source="88" target="90"/>
+<edge id="69" source="39" target="41"/>
+<edge id="70" source="88" target="91"/>
+<edge id="71" source="39" target="40"/>
+<edge id="72" source="88" target="89"/>
+<edge id="73" source="114" target="115"/>
+<edge id="74" source="114" target="116"/>
+<edge id="75" source="114" target="117"/>
+<edge id="76" source="114" target="118"/>
+<edge id="77" source="53" target="60"/>
+<edge id="78" source="74" target="80"/>
+<edge id="79" source="53" target="59"/>
+<edge id="80" source="74" target="81"/>
+<edge id="81" source="53" target="58"/>
+<edge id="82" source="74" target="78"/>
+<edge id="83" source="53" target="57"/>
+<edge id="84" source="74" target="79"/>
+<edge id="85" source="53" target="56"/>
+<edge id="86" source="74" target="76"/>
+<edge id="87" source="53" target="55"/>
+<edge id="88" source="74" target="77"/>
+<edge id="89" source="53" target="54"/>
+<edge id="90" source="74" target="75"/>
+<edge id="91" source="23" target="26"/>
+<edge id="92" source="23" target="25"/>
+<edge id="93" source="23" target="24"/>
+<edge id="94" source="23" target="29"/>
+<edge id="95" source="23" target="28"/>
+<edge id="96" source="74" target="82"/>
+<edge id="97" source="23" target="27"/>
+<edge id="98" source="61" target="66"/>
+<edge id="99" source="83" target="85"/>
+<edge id="100" source="61" target="65"/>
+<edge id="101" source="83" target="86"/>
+<edge id="102" source="83" target="84"/>
+<edge id="103" source="61" target="62"/>
+<edge id="104" source="61" target="64"/>
+<edge id="105" source="83" target="87"/>
+<edge id="106" source="61" target="63"/>
+<edge id="107" source="143" target="144"/>
+<edge id="108" source="14" target="16"/>
+<edge id="109" source="143" target="145"/>
+<edge id="110" source="14" target="15"/>
+<edge id="111" source="143" target="146"/>
+<edge id="112" source="7" target="13"/>
+<edge id="113" source="7" target="12"/>
+<edge id="114" source="7" target="11"/>
+<edge id="115" source="7" target="10"/>
+<edge id="116" source="7" target="9"/>
+<edge id="117" source="7" target="8"/>
+<edge id="118" source="67" target="73"/>
+<edge id="119" source="67" target="71"/>
+<edge id="120" source="67" target="72"/>
+<edge id="121" source="67" target="69"/>
+<edge id="122" source="67" target="70"/>
+<edge id="123" source="67" target="68"/>
+<edge id="124" source="30" target="33"/>
+<edge id="125" source="30" target="32"/>
+<edge id="126" source="30" target="31"/>
+<edge id="127" source="30" target="34"/>
+</edges>
+</graph>
+</gexf>
+

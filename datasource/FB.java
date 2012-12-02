@@ -1,5 +1,6 @@
 package datasource;
 
+import java.util.ConcurrentModificationException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -32,14 +33,16 @@ public class FB {
 	
 	private static FacebookClient client;
 
+	 
 	public static void setAccessToken(String access_token) {
 		client = new DefaultFacebookClient(access_token);
 		query = "me/friends";
 		queryFields = "birthday,name,about,bio,gender,quotes,address,hometown,"+
 				 "interested_in,religion,sports,relationship_status,education,"+
-				 "inspirational_people, political, languages, books";
-		
+				 "inspirational_people, political, languages, books";		
 	}	
+	
+
 	
 	/*
 	 * Gets the main user's friend's by returning a Set<contacts> .
@@ -56,8 +59,6 @@ public class FB {
 		Set<Contact> contacts = new HashSet<Contact>();
 		
 		for(User user: userList){
-			//System.out.println(user.getName());
-			
 			Contact c = Contact.createContact(user);
 			contacts.add(c);			
 		}
@@ -74,7 +75,9 @@ public class FB {
 	 */
 	
 	static public Set<Contact> crawlMyFriends(Set<Contact> contacts) throws FacebookException
-	{
+	{	
+		//bigContactSet will contact the friends from all friend's lists
+		Set<Contact> bigContactSet = new HashSet<Contact>();
 		for(Contact someContact: contacts){
 			queryLinkToContact(someContact);
 
@@ -82,14 +85,19 @@ public class FB {
 			
 			try{someContactFriends = client.fetchConnection(query, User.class,Parameter.with("fields", queryFields));}
 			catch(FacebookException e) {continue;}
-			System.out.println(query + " continue");
+			//System.out.println(query + " continue");
 			List<User> userList = someContactFriends.getData();
+			
+			//A set to keep friends of a friend.
+			Set<Contact> friendContactSet = new HashSet<Contact>();
 			for(User user: userList){
-				contacts.add(Contact.createContact(user));
+				friendContactSet.add(Contact.createContact(user));
 			}
-		}
-		
-		return contacts;
+			bigContactSet.addAll(friendContactSet);
+		  }
+		//add the initial contacts too now
+		bigContactSet.addAll(contacts);
+		return bigContactSet;
 	}
 
 	/*

@@ -1,6 +1,7 @@
 package clustering;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 
 import models.Contact;
@@ -11,16 +12,30 @@ import com.aliasi.matrix.Matrix;
 import com.aliasi.matrix.ProximityMatrix;
 import com.aliasi.util.Distance;
 
+import datasource.FB;
 /*
  * Cluster using HomeTown
  */
-
-import datasource.FB;
 
 public class HomeTownCluster {
  
 	static double EARTH_RADIUS_MILES = 3963.1;
 	
+
+	static public void print_clusters(Set<Contact> friends){
+		
+		Set<Set<Contact>> friend_months = HomeTownCluster.cluster(friends);
+		
+		System.out.println(friend_months.size()+" clusters");
+		
+		for(Set<Contact> set : friend_months){
+			System.out.println("=============================================");
+			for(Contact friend : set){
+				System.out.println(friend);
+			}
+		}		
+		
+	}	
 	
 	static public Set<Set<Contact>> cluster(Set<Contact> contacts){
 		
@@ -28,6 +43,7 @@ public class HomeTownCluster {
 		String[][] LON_LAT = new String[contacts.size()][];
 		
 		int i = 0;
+		Set<Contact> rem = new HashSet<Contact>();
 		for(Contact c : contacts){
 
 			String name = c.get("Hometown.name");
@@ -41,15 +57,40 @@ public class HomeTownCluster {
 					i++;
 				}
 			}
+			else rem.add(c);
 		}
+		contacts.removeAll(rem);
 		
-		String[][] temp = new String[i-1][];
-		System.arraycopy(LON_LAT, 0, temp, 0, i-1);
+		String[][] temp = new String[contacts.size()][];
+		System.arraycopy(LON_LAT, 0, temp, 0,contacts.size());
 		LON_LAT = temp;
 		
-		System.out.println(getDistanceMatrix(LON_LAT));
+		final HashMap<String,Integer> nameMap = new HashMap<String,Integer>();
 		
-		return null;
+		final Matrix distances = getDistanceMatrix(LON_LAT, nameMap);
+		
+		Distance<Contact> ht_distance = new Distance<Contact>(){
+			@Override
+			public double distance(Contact c0, Contact c1) {
+
+				
+				// first get there ids in distances
+				// we know they must be there
+				int c0_i = nameMap.get(c0.get("Hometown.name"));
+				int c1_i = nameMap.get(c1.get("Hometown.name"));
+				
+				// get the distance between them
+				return distances.value(c0_i, c1_i);
+			}
+			
+		};		
+
+        HierarchicalClusterer<Contact> clusterer 
+        = new CompleteLinkClusterer<Contact>(1,ht_distance);
+		
+       
+        return clusterer.cluster(contacts);
+
 	}	
 	/*
 	 * The below has been copied from 
@@ -57,24 +98,25 @@ public class HomeTownCluster {
 	 * 
 	 */
 	
-	 public static Matrix getDistanceMatrix(String[][] LON_LAT) {
+	 public static Matrix getDistanceMatrix(String[][] LON_LAT,HashMap<String,Integer> nameMap) {
 	        ProximityMatrix matrix = new ProximityMatrix(LON_LAT.length);
 	        for (int i = 0; i < LON_LAT.length; ++i) {
 	            //String city1 = LON_LAT[i][0];
 	            //matrix.setLabel(i,city1);
+	        	nameMap.put(LON_LAT[i][0], i);
 	        	//System.out.println(LON_LAT[i][1] + LON_LAT[i][2]);
 	            double lonA = Math.toRadians(Double.parseDouble(LON_LAT[i][1]));
-	            System.out.println("lonA = " + lonA + " NotSplit = "+ LON_LAT[i][1]);
+	            //System.out.println("lonA = " + lonA + " NotSplit = "+ LON_LAT[i][1]);
 	            double latA = Math.toRadians(Double.parseDouble(LON_LAT[i][2]));
-	            System.out.println("latA = " + latA);
+	            //System.out.println("latA = " + latA);
 	            
 	            for (int j = i+1; j < LON_LAT.length; ++j) {
 	                //String city2 = LON_LAT[j][0];
 	            	//System.out.println("j " + LON_LAT[j][1] + LON_LAT[j][2]);
 	                double lonB = Math.toRadians(Double.parseDouble(LON_LAT[j][1]));
-	                System.out.println("lonB = "+ lonB);
+	                //System.out.println("lonB = "+ lonB);
 	                double latB = Math.toRadians(Double.parseDouble(LON_LAT[j][2]));
-	                System.out.println("latB = "+ latB);
+	               // System.out.println("latB = "+ latB);
 	                double dist = d(lonA,latA,lonB,latB);
 			// System.out.println(city1 + "<==>" + city2 + "=" + dist);
 	                matrix.setValue(i,j,dist);

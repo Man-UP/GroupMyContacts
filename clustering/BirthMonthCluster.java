@@ -1,6 +1,9 @@
 package clustering;
 
+import java.util.HashSet;
 import java.util.Set;
+
+import output.Cluster;
 
 import models.Contact;
 
@@ -12,40 +15,23 @@ public class BirthMonthCluster {
 
 	static public void print_clusters(Set<Contact> friends){
 		
-		Set<Set<Contact>> friend_months = BirthMonthCluster.cluster(friends);
+		Set<Cluster> friend_months = BirthMonthCluster.cluster(friends);
 		
 		System.out.println(friend_months.size()+" clusters");
 		
-		for(Set<Contact> set : friend_months){
+		for(Cluster cluster : friend_months){
 			System.out.println("=============================================");
-			String b = set.iterator().next().get("Birthday");
-			if(b==null){
-				System.out.println("not given");
-			}
-			else switch(Integer.parseInt(b.substring(0,2))){
-				case 1 : System.out.println("Jan"); break;
-				case 2 : System.out.println("Feb");break;
-				case 3 : System.out.println("March");break;
-				case 4 : System.out.println("April");break;
-				case 5 : System.out.println("May");break;
-				case 6 : System.out.println("June");break;
-				case 7 : System.out.println("July");break;
-				case 8 : System.out.println("Aug");break;
-				case 9 : System.out.println("Sep");break;
-				case 10 : System.out.println("Oct");break;
-				case 11 : System.out.println("Nov");break;
-				case 12 : System.out.println("Dec");break;
-			}
+			System.out.println(cluster.name);
 			System.out.println("=============================================");
-			for(Contact friend : set){
+			for(Contact friend : cluster.nodes){
 				System.out.println(friend);
 			}
 		}		
 		
-	}
+	}	
 	
 	
-	static public Set<Set<Contact>> cluster(Set<Contact> contacts){
+	static public Set<Cluster> cluster(Set<Contact> contacts){
 		
 		Distance<Contact> bm_distance = new Distance<Contact>(){
 			@Override
@@ -74,7 +60,37 @@ public class BirthMonthCluster {
         = new CompleteLinkClusterer<Contact>(0,bm_distance);
 		
        
-        return clusterer.cluster(contacts);
+        Set<Set<Contact>> raw_clusters = clusterer.cluster(contacts);
+        
+        Set<Cluster> clusters = new HashSet<Cluster>();
+        
+        for(Set<Contact> set : raw_clusters){
+        	String label = "";
+        	String b = set.iterator().next().get("Birthday");
+    		if(b==null){
+    			label="not given";
+    		}
+    		else switch(Integer.parseInt(b.substring(0,2))){
+    			case 1 : label="Jan"; break;
+    			case 2 : label="Feb";break;
+    			case 3 : label="March";break;
+    			case 4 : label="April";break;
+    			case 5 : label="May";break;
+    			case 6 : label="June";break;
+    			case 7 : label="July";break;
+    			case 8 : label="Aug";break;
+    			case 9 : label="Sep";break;
+    			case 10 : label="Oct";break;
+    			case 11 : label="Nov";break;
+    			case 12 : label="Dec";break;
+    		}        	
+        	clusters.add(new Cluster(set,label));
+        }
+        
+        return clusters;
+        
+
+        
 	}
 	
 }

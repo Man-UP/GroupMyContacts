@@ -4,6 +4,7 @@ import java.util.Set;
 
 import models.Contact;
 import clustering.BirthMonthCluster;
+import clustering.BirthdayCluster;
 import clustering.HomeTownCluster;
 import datasource.FB;
 
@@ -33,8 +34,10 @@ public class Main {
 		
 		//BirthMonthCluster.print_clusters(friends);
 		
-		HomeTownCluster htc = new HomeTownCluster();		
-		htc.print_clusters(friends);
+		//HomeTownCluster htc = new HomeTownCluster();		
+		//htc.print_clusters(friends);
+		
+		BirthdayCluster.print_clusters(friends);
 
 		
 		
